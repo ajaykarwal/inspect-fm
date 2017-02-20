@@ -1,0 +1,36 @@
+.site-footer {
+  padding:20px;
+  background-color: $grey-light;
+  @include font-size(14px);
+}
+
+.hosts {
+  @include clearfix;
+
+}
+.host-profile {
+  @include clearfix;
+  margin-bottom:20px;
+
+  @include breakpoint($break-sm){
+    float:left;
+    width: 50%;
+  }
+
+  img {
+    width:60px;
+    border-radius:5px;
+    float:left;
+    margin-right:20px;
+  }
+  p {
+    padding:0;
+    margin:0;
+
+    &.name {
+      font-weight: bold;
+      @include font-size(16px);
+      margin-bottom: 5px;
+    }
+  }
+}

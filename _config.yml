@@ -1,0 +1,47 @@
+###### Site settings
+title             : Inspect
+metatitle         : Web Development & Tech Podcast
+description       : Web Development & Tech Podcast
+email             : inspectfm@gmail.com
+url               : http://inspect.fm
+encoding          : utf-8
+
+# google_analytics  : UA-16609747-8
+
+# Social accounts
+twitter_username  : inspectfm
+
+gems:
+  - jekyll-sitemap
+  - emoji_for_jekyll
+
+# Add _pages directory to jekyll build
+include: ["_pages"]
+
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - README.md
+
+#Build settings
+permalink: /:title/
+sass:
+  style: compressed
+
+# Conversion
+markdown:    kramdown
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+#Collections
+# collections:
+#   books:
+#     output: true
+#     permalink: /:path/
+
+
+
