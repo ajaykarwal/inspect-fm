@@ -15,15 +15,19 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
-
+  
   {% include header.html %}
 
   <main>
-    <div class="container">
-      {{content}}
+    <div class="content">
+      <div class="container">
+        {{content}}
+      </div>
     </div>
+
+    {% include sidebar.html %}
   </main>
-  
+
   {% include footer.html %}
 
   <!-- Twitter -->

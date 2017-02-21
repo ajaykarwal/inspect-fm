@@ -5,7 +5,8 @@ $break-md: 992px;
 $break-lg: 1200px;
 
 
-$brand-primary: #92278F;
+$brand-primary: #92278f;
+$brand-secondary: darken($brand-primary,10%);
 $white: #ffffff;
 
 $grey-light: #e7e7e7;

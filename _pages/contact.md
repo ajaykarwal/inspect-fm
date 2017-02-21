@@ -4,4 +4,6 @@
   permalink: /contact/
 ---
 
-We'd love to know what you think about the show. Unless you don't want to, we might use your name and feedback in a future episode. Just send an email at [inspectfm@gmail.com](mailto:inspectfm@gmail.com) or send us a DM at [@inspectfm](https://twitter.com/inspectfm).
+Have any questions you'd like us to discuss? Have some feedback about the show? Want to just be friends?
+
+You can find us on twitter at [@inspectfm](https://twitter.com/inspectfm) or you can send us an email at [inspectfm@gmail.com](mailto:inspectfm@gmail.com).

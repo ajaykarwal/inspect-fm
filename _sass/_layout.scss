@@ -1,0 +1,59 @@
+main {
+  @include clearfix;
+  background-color: $white;
+  padding-bottom:40px;
+
+  h1:first-of-type {
+    margin-top:0;
+  }
+}
+
+.sidebar {
+  border-top: 2px solid $grey-light;
+  margin-top: 40px;
+  padding-top:40px;
+
+  @include breakpoint($break-xs){
+    float:left;
+    width:320px;
+    border-top: 0;
+    margin-top:0;
+  }
+  @include breakpoint($break-md){
+    width:420px;
+  } 
+
+  a {
+    @include font-size(14px);
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+  &__block {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey-light;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.content {
+  padding-top:40px;
+
+  @include breakpoint($break-xs){
+    float:right;
+    width: calc(100% - 320px);
+  }
+  @include breakpoint($break-md){
+    width: calc(100% - 420px);
+  } 
+}

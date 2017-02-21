@@ -1,10 +1,12 @@
 .site-header {
-  background-color: $white;
-  
-  .logo-bar {
-    background-color: $brand-primary;
-    color: $white;
-  }
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#92278f+0,662d91+100 */
+  background-color: #92278f;
+  background: -moz-linear-gradient(top, #92278f 0%, #662d91 100%);
+  background: -webkit-linear-gradient(top, #92278f 0%, #662d91 100%);
+  background: linear-gradient(to bottom, #92278f 0%, #662d91 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92278f', endColorstr='#662d91',GradientType=0 );
+
+  color: $white;
 
   .logo {
     margin:0;
@@ -12,6 +14,7 @@
     padding-top:40px;
     color: $white;
     line-height: 0.75;
+    font-weight: 900;
     @include font-size(60px);
 
     a {
@@ -21,16 +24,7 @@
       font-style: italic;
     }
   }
-  .intro-bar {
-    padding:0 20px;
-  }
-  
-  .intro {
-    @include font-size(16px);
-    padding:20px 0;
-    margin-bottom:20px;
-    color: $grey-medium;
-  }
+
 
 }
 .site-nav {

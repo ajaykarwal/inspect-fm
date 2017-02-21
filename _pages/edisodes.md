@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Episodes
+title: All Episodes
 permalink: /episodes/
 ---
 
@@ -17,7 +17,11 @@ permalink: /episodes/
     </time>
   </p>
   <p>
-    {{ post.excerpt | remove: '<p>' | remove: '</p>' }} <span class="read-more"><a href="{{ post.url | relative_url }}">Read more</a></span>
+    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+  </p>
+  <p>
+    <a class="btn" href="{{ post.url | relative_url }}">Listen to the show</a>
   </p>
 </article>
+<div class="dot-divider">&middot;&middot;&middot;</div>
 {% endfor %}
