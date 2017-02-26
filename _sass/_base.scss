@@ -11,7 +11,7 @@ body {
   color: $grey-medium;
   line-height: 1.6;
   font-weight: 400;
-  @include font-size(16px);
+  @include font-size(17px);
   
   @include breakpoint($break-xs){
     @include font-size(18px);
@@ -41,7 +41,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $grey-dark;
+    color: $brand-secondary;
     text-decoration: underline;
   }
 }

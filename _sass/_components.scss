@@ -12,8 +12,9 @@
 }
 
 ul.share-page {
-  margin-top: 40px;
-  padding: 0;
+  border-top: 1px solid $grey-light;
+  margin: 40px 0 0 0;
+  padding: 40px 0 0 0;
   li {
     display: inline-block;
     vertical-align: top;
