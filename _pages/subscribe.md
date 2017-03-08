@@ -4,10 +4,13 @@
   permalink: /subscribe/
 ---
 
-How to subscribe.
+Hit the subscribe button at any of these locations
 
-iTunes
+[iTunes]({{ site.itunes }})
 
-Soundcloud
+[Pocket Casts]({{ site.pocket_casts }})
 
-RSS
+[Soundcloud]({{ site.soundcloud }})
+
+[Rss]({{ site.rss }})
+      

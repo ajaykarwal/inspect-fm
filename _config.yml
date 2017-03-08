@@ -11,9 +11,19 @@ encoding          : utf-8
 # Social accounts
 twitter_username  : inspectfm
 
+# Feed URLs
+itunes       : https://itunes.apple.com/gb/podcast/inspect/id1213377482
+pocket_casts : http://pca.st/pezi
+soundcloud   : http://soundcloud.com/inspectfm
+# rss          : http://feeds.soundcloud.com/users/soundcloud:users:290211107/sounds.rss
+rss          : /feed.xml
+      
+
 gems:
   - jekyll-sitemap
   - emoji_for_jekyll
+  - jekyll-feed
+
 
 # Add _pages directory to jekyll build
 include: ["_pages"]
