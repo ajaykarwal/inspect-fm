@@ -21,5 +21,5 @@ The show was started as a way for us to discuss the things we experience in our 
 
 [Ajay](http://www.ajaykarwal.com) is a Designer and Front-end Developer, pixel perfectionist, Apple enthusiast and father of 1.5.
 
-[Les](#) is a full stack developer who....
+[Les](http://codeoctopus.co.uk/) is a full stack developer, serial philomath and father of two specialising in the .Net ecosystem and all things geek.
 
