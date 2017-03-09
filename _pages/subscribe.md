@@ -10,6 +10,8 @@ Hit the subscribe button at any of these locations
 
 [Pocket Casts]({{ site.pocket_casts }})
 
+[Stitcher]({{ site.stitcher }})
+
 [Soundcloud]({{ site.soundcloud }})
 
 [Rss]({{ site.rss }})
