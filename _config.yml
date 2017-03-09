@@ -6,17 +6,17 @@ email             : inspectfm@gmail.com
 url               : http://inspect.fm
 encoding          : utf-8
 
-# google_analytics  : UA-16609747-8
+google_analytics  : UA-93339523-1
 
 # Social accounts
 twitter_username  : inspectfm
 
 # Feed URLs
+rss          : http://feeds.feedburner.com/inspectfm
 itunes       : https://itunes.apple.com/gb/podcast/inspect/id1213377482
 pocket_casts : http://pca.st/pezi
 soundcloud   : http://soundcloud.com/inspectfm
 # rss          : http://feeds.soundcloud.com/users/soundcloud:users:290211107/sounds.rss
-rss          : /feed.xml
       
 
 gems:
@@ -33,7 +33,7 @@ exclude:
  - Gemfile.lock
  - README.md
 
-#Build settings
+# Build settings
 permalink: /:title/
 sass:
   style: compressed
@@ -46,12 +46,3 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
-
-#Collections
-# collections:
-#   books:
-#     output: true
-#     permalink: /:path/
-
-
-
