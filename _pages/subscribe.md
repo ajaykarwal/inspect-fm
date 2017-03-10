@@ -4,7 +4,7 @@
   permalink: /subscribe/
 ---
 
-Hit the subscribe button at any of these locations
+Hit the subscribe button at any of these locations to automatically receive the latest episodes when they are released.
 
 [iTunes]({{ site.itunes }})
 
