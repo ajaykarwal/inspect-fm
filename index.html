@@ -3,8 +3,7 @@ layout: default
 ---
 
 <section class="homepage">
-<h1>Latest Episode <span>[<a href="/episodes/">All Episodes</a>]</span></h1>
-
+  <h1>Latest Episode <span>[<a href="/episodes/">All Episodes</a>]</span></h1>
 
   {% assign post = site.posts.first %}
   <article class="cf">
@@ -18,10 +17,6 @@ layout: default
         {{ post.date | date: "%b %-d, %Y" }}
       </time>
     </p>
-    <p>
-      {{ post.content }}
-    </p>
-
+    {{ post.content }}
   </article>
-  
 </section>

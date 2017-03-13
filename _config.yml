@@ -1,24 +1,35 @@
 ###### Site settings
-title             : Inspect
-metatitle         : Web Development & Tech Podcast
-description       : Web Development & Tech Podcast
-email             : inspectfm@gmail.com
-url               : http://inspect.fm
-encoding          : utf-8
+title            : Inspect
+metatitle        : Web Development and Tech Podcast
+description      : A weekly(ish) podcast about web development, design, technology and some other random stuff.
+tagline          : A weekly(ish) podcast about web development, design, technology and some other random stuff.
+email            : inspectfm@gmail.com
+base_url         : http://inspect.fm
+encoding         : utf-8
 
-google_analytics  : UA-93339523-1
+google_analytics : UA-93339523-1
+
+author:
+  name           : Ajay Karwal
+  email          : inspectfm@gmail.com
 
 # Social accounts
-twitter_username  : inspectfm
+twitter:
+  inspect        : inspectfm
+  ajay           : ajaykarwal
+  les            : lesmac2
 
 # Feed URLs
-rss          : http://feeds.feedburner.com/inspectfm
-itunes       : https://itunes.apple.com/gb/podcast/inspect/id1213377482
-pocket_casts : http://pca.st/pezi
-stitcher     : http://www.stitcher.com/podcast/inspect?refid=stpr
-soundcloud   : http://soundcloud.com/inspectfm
-# rss          : http://feeds.soundcloud.com/users/soundcloud:users:290211107/sounds.rss
-      
+feeds:
+  itunes       : https://itunes.apple.com/gb/podcast/inspect/id1213377482
+  pocket_casts : http://pca.st/pezi
+  stitcher     : http://www.stitcher.com/podcast/inspect?refid=stpr
+  soundcloud   : http://soundcloud.com/inspectfm
+  rss          : /feed.xml
+
+# rss          : http://feeds.feedburner.com/inspectfm
+
+aws_baseurl  : https://s3.eu-west-2.amazonaws.com/inspectfm/episodes/
 
 gems:
   - jekyll-sitemap
@@ -30,9 +41,10 @@ gems:
 include: ["_pages"]
 
 exclude:
- - Gemfile
- - Gemfile.lock
- - README.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
 
 # Build settings
 permalink: /:title/
@@ -40,10 +52,10 @@ sass:
   style: compressed
 
 # Conversion
-markdown:    kramdown
+# markdown:    kramdown
 
 # Markdown Processors
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+# kramdown:
+#   input: GFM
+#   auto_ids: true
+#   syntax_highlighter: rouge
