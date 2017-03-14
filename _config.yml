@@ -19,17 +19,16 @@ twitter:
   ajay           : ajaykarwal
   les            : lesmac2
 
-# Feed URLs
+# Feeds and iTunes
 feeds:
-  itunes       : https://itunes.apple.com/gb/podcast/inspect/id1213377482
-  pocket_casts : http://pca.st/pezi
-  stitcher     : http://www.stitcher.com/podcast/inspect?refid=stpr
-  soundcloud   : http://soundcloud.com/inspectfm
-  rss          : /feed.xml
+  itunes         : https://itunes.apple.com/gb/podcast/inspect/id1213377482
+  pocket_casts   : http://pca.st/pezi
+  stitcher       : http://www.stitcher.com/podcast/inspect?refid=stpr
+  soundcloud     : http://soundcloud.com/inspectfm
+  rss            : /feed.xml
 
-# rss          : http://feeds.feedburner.com/inspectfm
-
-aws_baseurl  : https://s3.eu-west-2.amazonaws.com/inspectfm/episodes/
+itunes_artwork   : /images/inspectfm_artwork.png
+audio_host       : https://s3.eu-west-2.amazonaws.com/inspectfm/episodes/
 
 gems:
   - jekyll-sitemap

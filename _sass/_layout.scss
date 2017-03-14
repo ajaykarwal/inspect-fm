@@ -1,8 +1,9 @@
 main {
   @include clearfix;
   background-color: $white;
-  padding-bottom:40px;
-
+  @include breakpoint($break-md){
+    padding-bottom:40px;
+  } 
   h1:first-of-type {
     margin-top:0;
   }
@@ -12,6 +13,7 @@ main {
   border-top: 2px solid $grey-light;
   margin-top: 40px;
   padding-top:40px;
+  background-color: lighten($grey-light, 5%);
 
   @include breakpoint($break-xs){
     float:left;
@@ -36,6 +38,7 @@ main {
     border-bottom: 1px solid $grey-light;
 
     &:last-of-type {
+      margin-bottom: 0;
       border-bottom: none;
     }
   }
@@ -50,7 +53,7 @@ main {
   padding-top:40px;
 
   @include breakpoint($break-xs){
-    float:right;
+    float:left;
     width: calc(100% - 320px);
   }
   @include breakpoint($break-md){

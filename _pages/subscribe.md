@@ -14,5 +14,5 @@ Hit the subscribe button at any of these locations to automatically receive the 
 
 [Soundcloud]({{ site.soundcloud }})
 
-[Rss]({{ site.rss }})
+[RSS]({{ site.rss }})
       
