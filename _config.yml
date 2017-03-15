@@ -22,8 +22,8 @@ twitter:
 # Feeds and iTunes
 feeds:
   itunes         : https://itunes.apple.com/gb/podcast/inspect/id1213377482
-  pocket_casts   : http://pca.st/pezi
-  stitcher       : http://www.stitcher.com/podcast/inspect?refid=stpr
+  pocket_casts   : http://pca.st/pmyU
+  stitcher       : http://www.stitcher.com/s?fid=133154&refid=stpr
   soundcloud     : http://soundcloud.com/inspectfm
   rss            : /feed.xml
 
