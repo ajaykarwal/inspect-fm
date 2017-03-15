@@ -17,13 +17,13 @@
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
   <language>en</language>
-  <copyright>Copyright © {{ site.time | date: '%Y' }}, {{site.title}}</copyright>
+  <copyright>Copyright {{ site.time | date: '%Y' }}, {{site.title}}</copyright>
   <managingEditor>{{site.author.email}} ({{ site.author.name }})</managingEditor>
   <webMaster>{{site.author.email}} ({{ site.author.name }})</webMaster>
 
   <itunes:new-feed-url>{{site.base_url}}/feed.xml</itunes:new-feed-url>
   <itunes:subtitle>{{site.tagline}}</itunes:subtitle>
-  <itunes:summary>{{site.tagline}}</itunes:summary>
+  <itunes:summary>{{site.description}}</itunes:summary>
   <itunes:keywords>design, development, technology</itunes:keywords>
   <itunes:category text="Technology">
     <itunes:category text="Tech News" />
@@ -48,7 +48,7 @@
     <guid>{{ episode.filename | xml_escape }}</guid>
 
     <itunes:author>{{site.author.name}}</itunes:author>
-    <itunes:summary>{{ episode.short_description | xml_escape }}</itunes:summary>
+    <itunes:summary>{{ episode.content | xml_escape }}</itunes:summary>
     <itunes:explicit>{{ episode.explicit }}</itunes:explicit>
     <itunes:image href="{{ site.base_url }}{{ site.itunes_artwork }}" />
     <itunes:duration>{{ episode.duration }}</itunes:duration>
