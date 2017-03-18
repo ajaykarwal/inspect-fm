@@ -6,13 +6,15 @@
 
 Hit the subscribe button at any of these locations to automatically receive the latest episodes when they are released.
 
-[iTunes]({{ site.itunes }})
+[iTunes]({{ site.feeds.itunes }})
 
-[Pocket Casts]({{ site.pocket_casts }})
+[Pocket Casts]({{ site.feeds.pocket_casts }})
 
-[Stitcher]({{ site.stitcher }})
+[Overcast]({{ site.feeds.overcast }})
 
-[Soundcloud]({{ site.soundcloud }})
+[Stitcher]({{ site.feeds.stitcher }})
 
-[RSS]({{ site.rss }})
+[Soundcloud]({{ site.feeds.soundcloud }})
+
+[RSS]({{ site.feeds.rss }})
       

@@ -23,6 +23,7 @@ twitter:
 feeds:
   itunes         : https://itunes.apple.com/gb/podcast/inspect/id1213377482
   pocket_casts   : http://pca.st/pmyU
+  overcast       : https://overcast.fm/itunes1213377482/inspect
   stitcher       : http://www.stitcher.com/s?fid=133154&refid=stpr
   soundcloud     : http://soundcloud.com/inspectfm
   rss            : /feed.xml
@@ -50,11 +51,4 @@ permalink: /:title/
 sass:
   style: compressed
 
-# Conversion
-# markdown:    kramdown
-
-# Markdown Processors
-# kramdown:
-#   input: GFM
-#   auto_ids: true
-#   syntax_highlighter: rouge
+future: false
