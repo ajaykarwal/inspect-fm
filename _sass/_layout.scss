@@ -1,9 +1,7 @@
 main {
   @include clearfix;
   background-color: $white;
-  @include breakpoint($break-md){
-    padding-bottom:40px;
-  } 
+
   h1:first-of-type {
     margin-top:0;
   }
@@ -58,5 +56,6 @@ main {
   }
   @include breakpoint($break-md){
     width: calc(100% - 420px);
+    padding-bottom:40px;
   } 
 }
