@@ -2,7 +2,7 @@
 
 This is the source code for [Inspect](http://www.inspect.fm).
 
-Inspect is a weekly(ish) show about the world of web development, design and technology (plus other random bits) hosted by Ajay Karwal and Les McCutcheon.
+Inspect is a weekly(ish) show about the world of web development, design and technology (plus other random bits) hosted by Ajay Karwal with some occasional guests.
 
 It's built using Jekyll and continuously deployed to Azure via Travis CI.
 
