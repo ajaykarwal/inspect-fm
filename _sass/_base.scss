@@ -31,6 +31,8 @@ body {
 h1,h2,h3,h4,h5,h6 {
   color: $grey-dark;
   font-weight: 700;
+  margin-top:2em;
+  margin-bottom: 0.75em;
 }
 h1 span {
   @include font-size(16px);
@@ -52,6 +54,21 @@ hr {
   background-color: $grey-light;
   margin:20px 0;
 }
+
+blockquote, .quote {
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 0.5em solid $brand-primary;
+  background-color: $white;
+  box-shadow: 6px 3px 16px 0px rgba(0,0,0,0.1);
+  font-size: inherit;
+  line-height: normal;
+
+  cite {
+    @include font-size(13px);
+  }
+}
+
 .btn {
   @include font-size(14px);
   display: block;
