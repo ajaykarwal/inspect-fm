@@ -16,4 +16,10 @@ If you like the content I'm sharing and would like to support the show's develop
 
 ## Become a Sponsor
 
-If you would like to sponsor the show and have your ad read out in one of our episodes, please [get in touch](/contact/) to discuss requirements.
+If you would like to sponsor the show and have your advert read out in an episode, please get in touch to discuss requirements.
+
+<a class="btn" href="/contact">Get in touch</a>
+
+## Just spread the word
+
+The easiest way to support the show is to spread the word with a simple <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out Inspect — A podcast about design, development and technology" data-url="http://inspect.fm" data-via="inspectfm" data-related="ajaykarwal" data-show-count="false">Tweet</a>.
