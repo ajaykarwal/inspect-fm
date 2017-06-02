@@ -24,4 +24,4 @@ If you would like to sponsor the show and have your advert read out in an episod
 
 ## Just spread the word
 
-The easiest way to support the show is to spread the word with a simple <a href="https://twitter.com/share" data-text="Check out Inspect — A podcast about design, development and technology" data-url="http://inspect.fm" data-via="inspectfm" data-related="ajaykarwal" data-show-count="false">Tweet</a>.
+The easiest way to support the show is to spread the word with a simple <a href="https://twitter.com/home?status=Check%20out%20Inspect%20%E2%80%94%20A%20podcast%20about%20design,%20development%20and%20technology%20http%3A//inspect.fm%20via%20%40inspectfm">Tweet</a>.
