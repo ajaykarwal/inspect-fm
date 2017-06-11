@@ -21,6 +21,7 @@ body {
   max-width:640px;
   padding:0 20px;
   @include breakpoint($break-md){
+  max-width:960px;
     padding:0 40px;
   } 
 }
@@ -88,6 +89,15 @@ blockquote, .quote {
     background-color: $brand-secondary;
     color: $white;
     text-decoration: none;
+  }
+  &--inline {
+    display: inline-block;
+  }
+
+  &--muted {
+    background-color: $grey-light;
+    color: $grey-dark;
+
   }
 }
 
