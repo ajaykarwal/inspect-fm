@@ -1,8 +1,8 @@
 ###### Site settings
 title            : Inspect
 metatitle        : Web Development and Tech Podcast
-description      : Inspect is a weekly(ish) show about the world of web development, design and technology (plus other random bits) hosted by Ajay Karwal.
-tagline          : A weekly(ish) podcast about web development, design, technology and some other random stuff.
+description      : Inspect is a show about the world of web development, design and technology hosted by Ajay Karwal - a designer and front-end developer, pixel perfectionist, Apple enthusiast and all round technophile - with some occasional guests.
+tagline          : A podcast about web development, design, technology and some other random stuff.
 email            : inspectfm@gmail.com
 base_url         : http://inspect.fm
 encoding         : utf-8

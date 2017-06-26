@@ -4,6 +4,6 @@
   permalink: /contact/
 ---
 
-Have any questions you'd like us to discuss? Have some feedback about the show? Want to just be friends?
+Have some feedback about the show? Have any questions you'd like me to discuss in an episode? Fancy becomming a Sponsor or just want to be friends?
 
-You can find us on twitter at [@inspectfm](https://twitter.com/inspectfm) or you can send us an email at [inspectfm@gmail.com](mailto:inspectfm@gmail.com).
+You can find me on twitter at [@inspectfm](https://twitter.com/inspectfm) or you can send me an email at [inspectfm@gmail.com](mailto:inspectfm@gmail.com).

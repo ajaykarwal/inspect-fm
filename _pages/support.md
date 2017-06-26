@@ -4,9 +4,7 @@
   permalink: /support/
 ---
 
-Inspect is a labour of love; but it comes at a cost. 
-
-If you like the content I'm sharing and would like to support the show's development, you can do so via my Patreon page at [patreon.com/ajaykarwal](https://www.patreon.com/ajaykarwal).
+If you like the content I'm sharing and would like to support the show's development, you can do so via my Patreon page at [patreon.com/ajaykarwal](https://www.patreon.com/ajaykarwal). It's an easy way to give back and be a part of the creative journey with me.
 
 <a href="https://www.patreon.com/ajaykarwal">
   <img src="/images/patreonlogoorange.png" alt="Patreon logo" class="patreon-logo">
@@ -16,7 +14,7 @@ If you like the content I'm sharing and would like to support the show's develop
 
 ## Become a Sponsor
 
-If you would like to sponsor the show and have your advert read out in an episode, please get in touch to discuss requirements.
+If you would like to sponsor the show and have your advert read out in an episode, please get in touch to discuss requirements. The show has a regular listener base of 500+ designers, developers and tech enthusiasts making it a great opportunity to spread the word about your product.
 
 <a class="btn" href="/contact">Get in touch</a>
 
