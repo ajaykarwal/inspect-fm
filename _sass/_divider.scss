@@ -1,0 +1,8 @@
+.dot-divider {
+  display: block;
+  text-align: center;
+  margin: 0 auto $space;
+  color: $grey-light;
+  @include font-size(30px);
+  line-height: 1;
+}

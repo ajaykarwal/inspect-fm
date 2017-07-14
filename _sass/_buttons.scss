@@ -1,0 +1,33 @@
+.btn {
+  @include font-size(14px);
+  display: block;
+  color: $white;
+  text-align: center;
+  padding:6px 12px;
+  margin-bottom:15px;
+  border-radius: 5px;
+  background-color: $brand-primary;
+
+  @include breakpoint($break-xs) {
+    display: inline-block;
+    margin-bottom:0;
+  }
+
+  &:hover {
+    background-color: $brand-secondary;
+    color: $white;
+    text-decoration: none;
+  }
+  &--inline {
+    display: inline-block;
+  }
+
+  &--muted {
+    background-color: $grey-light;
+    color: $grey-dark;
+
+  }
+}
+button {
+  @extend .btn;
+}

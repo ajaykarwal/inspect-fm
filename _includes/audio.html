@@ -1,12 +1,4 @@
 {% if page.filename %}
 <audio type="audio/mp3" src="{{site.audio_host}}{{page.filename}}.mp3" id="player" controls preload="none"></audio>
-<ul class="subscribe-buttons">
-  <li>Subscribe and listen:</li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.itunes }}">Apple Podcasts / iTunes</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.pocket_casts }}">Pocket Casts</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.overcast }}">Overcast</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.stitcher }}">Stitcher</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.rss }}">RSS</a></li>
-</ul>
-
+{% include subscribe-buttons.html %}
 {% endif%}

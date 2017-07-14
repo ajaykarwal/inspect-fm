@@ -4,7 +4,9 @@
   permalink: /support/
 ---
 
-If you like the content I'm sharing and would like to support the show's development, you can do so via my Patreon page at [patreon.com/ajaykarwal](https://www.patreon.com/ajaykarwal). It's an easy way to give back and be a part of the creative journey with me.
+If you like the content I'm sharing and would like to support the show's development, you can do so via my Patreon page at [patreon.com/ajaykarwal](https://www.patreon.com/ajaykarwal). 
+
+It's an easy way to give back and be a part of the creative journey with me.
 
 <a href="https://www.patreon.com/ajaykarwal">
   <img src="/images/patreonlogoorange.png" alt="Patreon logo" class="patreon-logo">

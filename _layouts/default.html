@@ -1,58 +1,22 @@
 <!DOCTYPE html>
-
 {% if page.url == "/" %}
-  {% assign schema_itemType = 'http://schema.org/WebPage' %}
+{% assign schema_itemType = 'http://schema.org/WebPage' %}
 {% else %}
-  {% assign schema_itemType = 'http://schema.org/Article' %}
+{% assign schema_itemType = 'http://schema.org/Article' %}
 {% endif %}
 <html lang="en" itemscope itemtype="{{ schema_itemType }}">
-
 {% include head.html %}
-
 <body>
   {% if jekyll.environment == 'production' %}
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGHSBZJ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  {% include body-scripts.html %}
   {% endif %}
-
-  <!-- Facebook SDK -->
-  <div id="fb-root"></div>
-  <script>
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  
   {% include header.html %}
-
   <main>
-    <div class="content">
-      <div class="container">
-        {{content}}
-      </div>
+    <div class="container">
+      {{content}}
     </div>
-
-    {% include sidebar.html %}
   </main>
-
   {% include footer.html %}
-
-  <!-- Twitter -->
-  <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
-  <!-- Google + -->
-  <script type="text/javascript">
-    window.___gcfg = { lang: 'en-GB' };
-    (function () {
-      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/platform.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-</body>
+  {% include footer-scripts.html %}
+  </body>
 </html>

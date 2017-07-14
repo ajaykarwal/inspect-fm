@@ -1,45 +1,30 @@
-.cf {
-  @include clearfix;
-}
 html {
-  font-size:16px;
+  box-sizing:border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  margin:0;
-  font-family: 'Lato', sans-serif;
+  margin: auto;
   background-color: $white;
   color: $grey-medium;
+  font-family: 'Lato', sans-serif;
+  font-weight: $fw-normal;
+  font-size:100%;
   line-height: 1.6;
-  font-weight: 400;
-  @include font-size(17px);
-  
-  @include breakpoint($break-xs){
-    @include font-size(18px);
-  }
-}
-.container {
-  max-width:640px;
-  padding:0 20px;
-  @include breakpoint($break-md){
-  max-width:960px;
-    padding:0 40px;
-  } 
-}
-.text-center {
-  text-align: center;
 }
 
 h1,h2,h3,h4,h5,h6 {
   color: $grey-dark;
-  font-weight: 700;
-  margin-top:2em;
-  margin-bottom: 0.75em;
+  font-weight: $fw-bold;
+  margin-top:$space;
+  margin-bottom: $space;
 }
-h1 span {
-  @include font-size(16px);
-  font-weight: 400;
-  margin-left: 10px;
-}
+
 a {
   color: $brand-primary;
   text-decoration: none;
@@ -49,16 +34,17 @@ a {
     text-decoration: underline;
   }
 }
+
 hr {
   height:1px;
   border:0;
   background-color: $grey-light;
-  margin:20px 0;
+  margin:$space-l 0;
 }
 
 blockquote, .quote {
-  margin: 1em 0;
-  padding: 1em;
+  margin: $space 0;
+  padding: $space;
   border-left: 0.5em solid $brand-primary;
   background-color: $white;
   box-shadow: 6px 3px 16px 0px rgba(0,0,0,0.1);
@@ -70,36 +56,6 @@ blockquote, .quote {
   }
 }
 
-.btn {
-  @include font-size(14px);
-  display: block;
-  color: $white;
-  text-align: center;
-  padding:6px 12px;
-  margin-bottom:15px;
-  border-radius: 5px;
-  background-color: $brand-primary;
-
-  @include breakpoint($break-xs) {
-    display: inline-block;
-    margin-bottom:0;
-  }
-
-  &:hover {
-    background-color: $brand-secondary;
-    color: $white;
-    text-decoration: none;
-  }
-  &--inline {
-    display: inline-block;
-  }
-
-  &--muted {
-    background-color: $grey-light;
-    color: $grey-dark;
-
-  }
-}
 
 audio {
   width:100%;

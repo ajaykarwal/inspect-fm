@@ -2,44 +2,54 @@
   @include gradient($brand-primary, $brand-secondary);
   color: $white;
   text-align: center;
-  @include breakpoint($break-xs){
-    text-align: left;
+  padding: $space-l 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  color: $white;
+
+  a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
   }
 
-  .logo {
-    margin:0;
-    padding:0;
-    padding-top:40px;
-    color: $white;
-    line-height: 0.75;
-    font-weight: 900;
-    @include font-size(60px);
+  &__icon {
+    display: block;
 
-    a {
-      color: inherit;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-style: italic;
+    svg {
+      fill: $white;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
     }
   }
-
-
+  &__text {
+    display: block;
+    line-height: normal;
+    margin-top: -$space-xs;
+    font-weight: $fw-bold;
+    @include font-size(40px);
+  }
 }
+
 .site-nav {
-  padding-top:20px;
+  padding-top: $space-l;
   ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 
     li {
       @include font-size(13px);
       display: inline-block;
-      margin:0 10px 0 10px;
+      margin: 0 $space;
 
-      @include breakpoint($break-xs){
+      @include breakpoint($break-xs) {
         @include font-size(14px);
-        margin:0 20px 0 0;
+        margin: 0 $space-l 0 0;
       }
 
       a {
