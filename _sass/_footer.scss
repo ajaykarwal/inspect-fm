@@ -1,5 +1,9 @@
 .site-footer {
-  padding:20px;
+  padding:$space-l;
   background-color: $grey-light;
   @include font-size(14px);
+
+  hr {
+    background-color: darken($grey-light, 5%);
+  }
 }

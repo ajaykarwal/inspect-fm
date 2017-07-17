@@ -1,38 +1,43 @@
-<div class="sidebar">
-  <div class="container">
-    <p class="intro">Inspect is a podcast about web development, design, technology &amp; some other random stuff.</p>
-    
+<div class="sidebar grid">
+  <div class="grid__column">
+    <h2>About the Host</h2>
     <div class="sidebar__block">
-      <h3>Hosted by</h3>
-      <div class="host-profile">
+      <div class="sidebar__block-image">
         <img src="/images/ajay.jpg" alt="Photo of Ajay Karwal">
-        <p class="name">Ajay Karwal</p>
+      </div>
+      <div class="sidebar__block-text">
+        <p>Inspect is a podcast about web development, design, technology &amp; some other random stuff hosted by <a href="http://ajaykarwal.com">Ajay Karwal</a></p>
       </div>
     </div>
-
+  </div>
+  
+  <div class="grid__column">
+    <h2>Join the Inspect Slack team</h2>
     <div class="sidebar__block">
-      <h3>Follow</h3>
-      <ul class="sidebar__list">
-        <li><a href="http://twitter.com/inspectfm">@inspectfm</a></li>
-        <li><a href="http://twitter.com/ajaykarwal">@ajaykarwal</a></li>
-      </ul>
+      <div class="sidebar__block-image">
+        <img src="/images/slack.png" alt="Slack logo">
+      </div>
+      <div class="sidebar__block-text">
+        <p>Discuss episodes, share idea and meet fellow Inspect subscribers in the Slack team.</p>
+        <p><a class="btn" href="/slack">Get an invite</a></p>
+      </div>
     </div>
+  </div>
 
+  <div class="grid__column">
+    <h2>Follow</h2>
     <div class="sidebar__block">
-      <h3>Join the Inspect Slack team</h3>
-      <p>Discuss episodes, share idea and meet fellow Inspect subscribers in the Slack team.</p>
-      <p><a class="btn" href="/slack">Get an invite</a></p>
-      
-    </div>
-
-    <div class="sidebar__block">
-      <h3>Subscribe</h3>
       <ul class="sidebar__list">
-        <li><a target="_blank" href="{{ site.feeds.itunes }}">Apple Podcasts / iTunes</a></li>
-        <li><a target="_blank" href="{{ site.feeds.pocket_casts }}">Pocket Casts</a></li>
-        <li><a target="_blank" href="{{ site.feeds.overcast }}">Overcast</a></li>
-        <li><a target="_blank" href="{{ site.feeds.stitcher }}">Stitcher</a></li>
-        <li><a target="_blank" href="{{ site.feeds.rss }}">RSS</a></li>
+        <li>
+          <a href="https://twitter.com/inspectfm" class="twitter-follow-button" data-show-count="false">
+            Follow @inspectfm
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ajaykarwal" class="twitter-follow-button" data-show-count="false">
+            Follow @ajaykarwal
+          </a>
+        </li>
       </ul>
     </div>
   </div>
