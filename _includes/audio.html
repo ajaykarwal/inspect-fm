@@ -8,15 +8,17 @@
   </div>
   <div class="audio__description">
     <p>{{include.page.short_description}}</p>
-    {% if page.url != "/" %}
+    {% if page.url == "/episodes/" %}
     <a class="btn" href="{{ include.page.url | relative_url }}">Listen to the show</a>
     {%endif%}
   </div>
-  {% if page.url == "/" %}
+  {% if page.url != "/episodes/" %}
   <div class="audio__player">
     <audio type="audio/mp3" src="{{site.audio_host}}{{include.page.filename}}.mp3" id="player" controls preload="none"></audio>
   </div>
   {%endif%}
 </div>
-
+{% if page.url != "/episodes/" %}
 {% include subscribe-buttons.html %}
+{%endif%}
+

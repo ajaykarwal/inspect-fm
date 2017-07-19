@@ -6,7 +6,10 @@ layout: default
   <header>
     <h1>{{ page.title | escape }}</h1>
   </header>
-  <article>{{ content }}</article>
+  <article>
+    {% include audio.html page=page %}
+    {{ content }}
+  </article>
   <footer>
     {% include share-page.html %}
   </footer>
