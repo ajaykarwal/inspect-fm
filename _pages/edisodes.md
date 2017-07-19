@@ -18,12 +18,7 @@ permalink: /episodes/
       </time>
     </p>
   </header>
-  <p>
-    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-  </p>
-  <p>
-    <a class="btn" href="{{ post.url | relative_url }}">Listen to the show</a>
-  </p>
-</article>
+  {% include audio.html page=post %}
+ </article>
 <div class="dot-divider">&middot; &middot; &middot;</div>
 {% endfor %}

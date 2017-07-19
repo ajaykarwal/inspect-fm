@@ -1,0 +1,24 @@
+.audio {
+  margin-top: $space-l;
+  display: grid;
+  grid-gap: $space;
+  grid-template-columns: 180px 1fr;
+  grid-template-areas: "a d" "p p";
+
+  &__artwork {
+    grid-area: a;
+    width: 180px;
+    height: 180px;
+    background-color: #ccc;
+  }
+  &__description {
+    grid-area: d;
+    
+    p {
+      margin-top: 0;
+    }
+  }
+  &__player {
+    grid-area: p;
+  }
+}

@@ -1,4 +1,22 @@
-{% if page.filename %}
-<audio type="audio/mp3" src="{{site.audio_host}}{{page.filename}}.mp3" id="player" controls preload="none"></audio>
+<div class="audio">
+  <div class="audio__artwork">
+    {% if include.page.artwork %}
+    <img src="" alt="CUSTOM">
+    {%else%}
+    <img src="" alt="DEFAULT">
+    {% endif%}
+  </div>
+  <div class="audio__description">
+    <p>{{include.page.short_description}}</p>
+    {% if page.url != "/" %}
+    <a class="btn" href="{{ include.page.url | relative_url }}">Listen to the show</a>
+    {%endif%}
+  </div>
+  {% if page.url == "/" %}
+  <div class="audio__player">
+    <audio type="audio/mp3" src="{{site.audio_host}}{{include.page.filename}}.mp3" id="player" controls preload="none"></audio>
+  </div>
+  {%endif%}
+</div>
+
 {% include subscribe-buttons.html %}
-{% endif%}

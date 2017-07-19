@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: home
 ---
-
 <section class="homepage">
   <header>
-    <h1>Latest Episode <span>[<a href="/episodes/">All Episodes</a>]</span></h1>
+    <h1>Latest Episode</h1>
+    <p class="subheading">[<a href="/episodes/">All Episodes</a>]</p>
   </header>
 
   {% assign post = site.posts.first %}
@@ -21,6 +21,7 @@ layout: default
         </time>
       </p>
     </header>
+    {% include audio.html page=post %}
     {{ post.content }}
   </article>
 </section>
