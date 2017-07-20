@@ -1,18 +1,27 @@
 .audio {
   margin-top: $space-l;
   display: grid;
-  grid-gap: $space;
-  grid-template-columns: 60px 1fr;
-  grid-template-areas: "a a" "d d" "p p";
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-areas: "a a" "p p" "d d";
   
   @include breakpoint($break-xs) {
+    grid-gap: $space;
     grid-template-columns: 180px 1fr;
-    grid-template-areas: "a d" "p p";
+    grid-template-areas: "a d" "a d" "p p";
   }
 
   &__artwork {
     grid-area: a;
+    
     text-align: center;
+    max-width:60px;
+    display: inline-block;
+    margin: auto;
+
+    @include breakpoint($break-xs) {
+      max-width:none;
+    }
   }
   &__description {
     grid-area: d;

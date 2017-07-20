@@ -1,10 +1,18 @@
 <div class="audio">
   <div class="audio__artwork">
+    {% if page.url == "/episodes/" %}
+    <a href="{{ include.page.url | relative_url }}">
+    {%endif%}
+
     {% if include.page.artwork %}
     <img src="/images/episodes/{{include.page.artwork}}.jpg" alt="{{include.page.title}}">
     {%else%}
     <img src="/images/episodes/default.png" alt="{{include.page.title}}">
     {% endif%}
+
+    {% if page.url == "/episodes/" %}
+    </a>
+    {%endif%}
   </div>
   <div class="audio__description">
     <p>{{include.page.short_description}}</p>
