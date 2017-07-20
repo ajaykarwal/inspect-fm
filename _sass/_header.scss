@@ -2,47 +2,75 @@
   @include gradient($brand-primary, $brand-secondary);
   color: $white;
   text-align: center;
-  padding: $space-l 0;
+  padding: $space 0;
+
+  @include breakpoint($break-xs) {
+    padding: $space-l 0;
+  }
 }
 
 .logo {
   margin: 0;
   padding: 0;
   color: $white;
+  float:left;
+  @include breakpoint($break-xs) {
+    float:none;
+  }
 
   a {
     display: block;
     color: inherit;
     text-decoration: none;
+    line-height: 1;
   }
 
   &__icon {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+
+    @include breakpoint($break-xs) {
+      display: block;
+    }
 
     svg {
       fill: $white;
-      width: 50px;
-      height: 50px;
+      width: 30px;
       display: inline-block;
+      
+      @include breakpoint($break-xs) {
+        width: 50px;
+      }
     }
   }
   &__text {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     line-height: normal;
-    margin-top: -$space-xs;
+    margin-left: 2px;
     font-weight: $fw-bold;
-    @include font-size(40px);
+    @include font-size(24px);
+
+    @include breakpoint($break-xs) {
+      display: block;
+      margin-top: -$space-xs;
+      @include font-size(40px);
+    }
   }
 }
 
 .site-nav {
-  padding-top: $space;
+  clear: both;
+
   @include breakpoint($break-xs) {
     padding-top: $space-l;
   }
   &__toggle {
+    float: right;
     display: inline-block;
     margin: 0;
+    margin-top: 4px;
     background: none;
     border: 0;
     padding: 0;
@@ -69,7 +97,9 @@
     }
     
     @include breakpoint($break-xs) {
+      float: none;
       display: none;
+      margin-top: 0;
     }
   }
 
@@ -83,11 +113,16 @@
     visibility: hidden;
     
     &.visible {
-      height: calc(30px * 6);
+      padding-top: $space;
+      height: 230px;
       opacity: 1;
       visibility: visible;
+
       li {
         display: block;
+        @include breakpoint($break-xs) {
+          display: inline-block;
+        }
       }
     }
 
@@ -96,24 +131,21 @@
       height: auto;
       opacity: 1;
       visibility: visible;
+
       &.visible {
         height: auto;
       }
     }
 
     li {
-
-      @include font-size(13px);
       display: none;
       margin: $space 0;
+      @include font-size(13px);
       
-
       @include breakpoint($break-xs) {
         display: inline-block;
         margin: 0 $space;
-
         @include font-size(14px);
-        margin: 0 $space-l 0 0;
       }
 
       a {
