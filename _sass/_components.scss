@@ -1,9 +1,3 @@
-.intro {
-  @include font-size(17px);
-  margin-top:5px;
-  color: $grey-medium;
-}
-
 ul.share-page {
   border-top: 1px solid $grey-light;
   margin: 40px 0 0 0;
@@ -29,38 +23,17 @@ ul.share-page {
 }
 
 
-
-.host-profile {
-  @include clearfix;
-
-  img {
-    width:60px;
-    border-radius:50%;
-    float:left;
-    margin-right:10px;
-  }
-  .name {
-    padding-top: 16px;
-    font-weight: bold;
-    @include font-size(16px);
-  }
-}
-
 .subscribe-buttons {
   list-style-type: none;
   margin: 20px 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 
   li {
     display: inline-block;
-    margin-right: 10px;
   }
 }
-
-
-// article h2:first-of-type {
-//   margin-top: 0;
-// }
 
 .patreon-logo {
   width:200px;

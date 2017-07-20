@@ -1,9 +1,9 @@
 <div class="audio">
   <div class="audio__artwork">
     {% if include.page.artwork %}
-    <img src="" alt="CUSTOM">
+    <img src="/images/episodes/{{include.page.artwork}}.jpg" alt="{{include.page.title}}">
     {%else%}
-    <img src="" alt="DEFAULT">
+    <img src="/images/episodes/default.png" alt="{{include.page.title}}">
     {% endif%}
   </div>
   <div class="audio__description">
