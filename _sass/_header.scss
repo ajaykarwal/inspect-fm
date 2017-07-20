@@ -36,18 +36,82 @@
 }
 
 .site-nav {
-  padding-top: $space-l;
+  padding-top: $space;
+  @include breakpoint($break-xs) {
+    padding-top: $space-l;
+  }
+  &__toggle {
+    display: inline-block;
+    margin: 0;
+    background: none;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    color: white;
+    text-indent: -99em;
+    overflow: hidden;
+    &:hover {
+      background: none;
+    }
+    &:after {
+      content: '=';
+      text-indent: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 3em;
+      line-height: 21px;
+    }
+    
+    @include breakpoint($break-xs) {
+      display: none;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    transition: all 200ms ease;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    
+    &.visible {
+      height: calc(30px * 6);
+      opacity: 1;
+      visibility: visible;
+      li {
+        display: block;
+      }
+    }
+
+    @include breakpoint($break-xs) {
+      display: block;
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      &.visible {
+        height: auto;
+      }
+    }
 
     li {
+
       @include font-size(13px);
-      display: inline-block;
-      margin: 0 $space;
+      display: none;
+      margin: $space 0;
+      
 
       @include breakpoint($break-xs) {
+        display: inline-block;
+        margin: 0 $space;
+
         @include font-size(14px);
         margin: 0 $space-l 0 0;
       }
