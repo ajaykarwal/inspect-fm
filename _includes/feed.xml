@@ -14,7 +14,7 @@
   <link>{{site.base_url}}</link>
   <description>{{site.description}}</description>
   <image>
-    <url>{{site.base_url}}{{ site.itunes_artwork }}</url>
+    <url>{{site.base_url}}{{ site.feed_artwork }}</url>
     <title>{{site.title}}</title>
     <link>{{site.base_url}}</link>
   </image>
@@ -40,7 +40,7 @@
   </itunes:owner>
   <itunes:block>no</itunes:block>
   <itunes:explicit>no</itunes:explicit>
-  <itunes:image href="{{site.base_url}}{{ site.itunes_artwork }}" />
+  <itunes:image href="{{site.base_url}}{{ site.feed_artwork }}" />
 
   {% for episode in site.posts %}
   <item>
@@ -49,7 +49,7 @@
     <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
     <description>{{'<![CDATA['}}{{ episode.content }}{{']]>'}}</description>
     <image>
-      <url>{{site.base_url}}{{ site.itunes_artwork }}</url>
+      <url>{{site.base_url}}{{ site.feed_artwork }}</url>
       <title>{{episode.title}}</title>
       <link>{{site.base_url}}{{ episode.url }}</link>
     </image>
@@ -60,7 +60,7 @@
     <itunes:author>{{site.author.name}}</itunes:author>
     <itunes:summary>{{ episode.content | xml_escape }}</itunes:summary>
     <itunes:explicit>{{ episode.explicit }}</itunes:explicit>
-    <itunes:image href="{{ site.base_url }}{{ site.itunes_artwork }}" />
+    <itunes:image href="{{ site.base_url }}{{ site.feed_artwork }}" />
     <itunes:duration>{{ episode.duration }}</itunes:duration>
     <itunes:keywords>{{ episode.tags | join:', ' }}</itunes:keywords>
   </item>
