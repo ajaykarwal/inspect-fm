@@ -27,12 +27,21 @@ ul.share-page {
   list-style-type: none;
   margin: 20px 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-
+  
   li {
-    display: inline-block;
+    display:inline-block;
+    margin-right: 10px;
   }
+  @include breakpoint($break-xs) {
+    display: flex;
+    justify-content: space-between;
+  
+    li {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
 }
 
 .patreon-logo {
