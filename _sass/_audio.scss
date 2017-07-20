@@ -7,7 +7,7 @@
   
   @include breakpoint($break-xs) {
     grid-gap: $space;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 140px 1fr;
     grid-template-areas: "a d" "a d" "p p";
   }
 
