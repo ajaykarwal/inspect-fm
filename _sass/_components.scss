@@ -41,11 +41,21 @@ ul.share-page {
       margin: 0;
     }
   }
-
+  svg {
+      /* fill : white; */
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+  }
 }
 
 .patreon-logo {
   width:200px;
   height:auto;
   display: block;
+}
+.slack-logo {
+  width:160px;
+  height:auto;
+  display: inline-block;
 }

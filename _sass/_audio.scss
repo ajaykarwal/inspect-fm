@@ -1,7 +1,7 @@
 .audio {
   margin-top: $space-l;
   display: grid;
-  grid-gap: 0;
+  grid-gap: $space-s;
   grid-template-columns: 1fr;
   grid-template-areas: "a a" "p p" "d d";
   

@@ -18,6 +18,12 @@
     color: $white;
     text-decoration: none;
   }
+  
+  &--large {
+    @include font-size(20px);
+    padding:10px 20px;
+  }
+
   &--inline {
     display: inline-block;
   }
