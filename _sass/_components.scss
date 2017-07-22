@@ -24,30 +24,56 @@ ul.share-page {
 
 
 .subscribe-buttons {
-  list-style-type: none;
-  margin: 20px 0;
-  padding: 0;
-  
-  li {
-    display:inline-block;
-    margin-right: 10px;
-  }
-  @include breakpoint($break-xs) {
-    display: flex;
-    justify-content: space-between;
-  
+  background: lighten($grey-light, 5%);
+  border: 1px solid darken($grey-light, 5%);
+  padding: 0 $space;
+  margin: $space 0;
+
+  ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    
     li {
-      display: inline-block;
-      margin: 0;
+      display:block;
+      margin-bottom: 10px;
+
+      a {
+        @include breakpoint($break-xs) {
+          @include font-size(14px);
+          display: inline-block;
+          color: $white;
+          text-align: center;
+          padding:6px 12px;
+          border-radius: 5px;
+          background-color: $brand-primary;
+          &:hover {
+            background-color: $brand-secondary;
+            color: $white;
+            text-decoration: none;
+          }
+
+        }        
+      }
+    }
+    @include breakpoint($break-xs) {
+      display: flex;
+      justify-content: space-between;
+    
+      li {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+    svg {
+        /* fill : white; */
+        width: 20px;
+        height: 20px;
+        display: inline-block;
     }
   }
-  svg {
-      /* fill : white; */
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-  }
-}
+
+} 
 
 .patreon-logo {
   width:200px;
