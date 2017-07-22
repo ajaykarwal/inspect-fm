@@ -1,5 +1,7 @@
 <div class="subscribe-buttons text-center">
+  {% if page.url != "/subscribe/" %}
   <h4>Subscribe in your favourite podcast player</h4>
+  {%endif%}
   <ul>
     <li><a target="_blank" href="{{ site.feeds.itunes }}">Apple Podcasts / iTunes</a></li>
     <li><a target="_blank" href="{{ site.feeds.pocket_casts }}">Pocket Casts</a></li>
