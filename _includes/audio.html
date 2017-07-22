@@ -21,12 +21,15 @@
     {%endif%}
   </div>
   {% if page.url != "/episodes/" %}
+  {% if page.url != "/feed.xml" %}
   <div class="audio__player">
     <audio type="audio/mp3" src="{{site.audio_host}}{{include.page.filename}}.mp3" id="player" controls preload="none"></audio>
   </div>
   {%endif%}
+  {%endif%}
 </div>
 {% if page.url != "/episodes/" %}
+{% if page.url != "/feed.xml" %}
 {% include subscribe-buttons.html %}
 {%endif%}
-
+{%endif%}

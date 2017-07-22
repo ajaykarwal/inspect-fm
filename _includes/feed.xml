@@ -47,7 +47,7 @@
     <link>{{site.base_url}}{{ episode.url }}</link>
     <title>{{ episode.number}}. {{ episode.title }}</title>
     <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
-    <description>{{'<![CDATA['}}{{ episode.content }}{{']]>'}}</description>
+    <description>{{'<![CDATA['}}{% include audio.html page=episode %}{{ episode.content }}{{']]>'}}</description>
     <image>
       <url>{{site.base_url}}{{ site.feed_artwork }}</url>
       <title>{{episode.title}}</title>
@@ -58,7 +58,7 @@
     <guid>{{ episode.filename | xml_escape }}</guid>
 
     <itunes:author>{{site.author.name}}</itunes:author>
-    <itunes:summary>{{ episode.content | xml_escape }}</itunes:summary>
+    <itunes:summary>{{ episode.short_description | xml_escape }}</itunes:summary>
     <itunes:explicit>{{ episode.explicit }}</itunes:explicit>
     <itunes:image href="{{ site.base_url }}{{ site.feed_artwork }}" />
     <itunes:duration>{{ episode.duration }}</itunes:duration>
