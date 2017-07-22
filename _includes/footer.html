@@ -1,5 +1,9 @@
 <footer class="site-footer">
-  <div class="container">
+  {% include sidebar.html %}
+  
+  <hr>
+
+  <div class="copyright">
     &copy; {{ site.time | date: '%Y' }}, Inspect.
-  </div> 
+  </div>
 </footer>

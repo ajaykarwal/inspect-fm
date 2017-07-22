@@ -27,7 +27,7 @@ feeds:
   soundcloud     : http://soundcloud.com/inspectfm
   rss            : /feed.xml
 
-itunes_artwork   : /images/inspectfm_artwork.png
+feed_artwork     : /images/feed_artwork.jpg
 audio_host       : http://dts.podtrac.com/redirect.mp3/s3.eu-west-2.amazonaws.com/inspectfm/episodes/
 
 gems:

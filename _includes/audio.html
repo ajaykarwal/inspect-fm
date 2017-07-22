@@ -1,12 +1,35 @@
-{% if page.filename %}
-<audio type="audio/mp3" src="{{site.audio_host}}{{page.filename}}.mp3" id="player" controls preload="none"></audio>
-<ul class="subscribe-buttons">
-  <li>Subscribe and listen:</li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.itunes }}">Apple Podcasts / iTunes</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.pocket_casts }}">Pocket Casts</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.overcast }}">Overcast</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.stitcher }}">Stitcher</a></li>
-  <li><a class="btn btn--inline btn--muted" target="_blank" href="{{ site.feeds.rss }}">RSS</a></li>
-</ul>
+<div class="audio">
+  <div class="audio__artwork">
+    {% if page.url == "/episodes/" %}
+    <a href="{{ include.page.url | relative_url }}">
+    {%endif%}
 
-{% endif%}
+    {% if include.page.artwork %}
+    <img src="/images/episodes/{{include.page.artwork}}.jpg" alt="{{include.page.title}}">
+    {%else%}
+    <img src="/images/episodes/default.png" alt="{{include.page.title}}">
+    {% endif%}
+
+    {% if page.url == "/episodes/" %}
+    </a>
+    {%endif%}
+  </div>
+  <div class="audio__description">
+    <p>{{include.page.short_description}}</p>
+    {% if page.url == "/episodes/" %}
+    <a class="btn" href="{{ include.page.url | relative_url }}">Listen to the show</a>
+    {%endif%}
+  </div>
+  {% if page.url != "/episodes/" %}
+  {% if page.url != "/feed.xml" %}
+  <div class="audio__player">
+    <audio type="audio/mp3" src="{{site.audio_host}}{{include.page.filename}}.mp3" id="player" controls preload="none"></audio>
+  </div>
+  {%endif%}
+  {%endif%}
+</div>
+{% if page.url != "/episodes/" %}
+{% if page.url != "/feed.xml" %}
+{% include subscribe-buttons.html %}
+{%endif%}
+{%endif%}

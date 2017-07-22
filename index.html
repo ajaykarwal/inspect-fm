@@ -1,22 +1,27 @@
 ---
-layout: default
+layout: home
 ---
-
 <section class="homepage">
-  <h1>Latest Episode <span>[<a href="/episodes/">All Episodes</a>]</span></h1>
+  <header>
+    <h1>Latest Episode</h1>
+    <p class="subheading">[<a href="/episodes/">All Episodes</a>]</p>
+  </header>
 
   {% assign post = site.posts.first %}
   <article class="cf">
-    <h2>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </h2>
-    <p class="date">
-      <time datetime="{{ page.date }}" itemprop="datePublished">
-        {{ post.date | date: "%b %-d, %Y" }}
-      </time>
-    </p>
+    <header>
+      <h2>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h2>
+      <p class="date">
+        <time datetime="{{ page.date }}" itemprop="datePublished">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+      </p>
+    </header>
+    {% include audio.html page=post %}
     {{ post.content }}
   </article>
 </section>

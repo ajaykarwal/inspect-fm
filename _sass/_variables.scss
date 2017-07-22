@@ -1,52 +1,26 @@
 //Breakpoints
-$break-xs: 480px;
-$break-sm: 768px;
-$break-md: 992px;
-$break-lg: 1200px;
+$break-xs        : 480px;
+$break-sm        : 768px;
+$break-md        : 992px;
+$break-lg        : 1200px;
 
+$brand-primary   : #13b2b1;
+$brand-secondary : #342766;
+$white           : #ffffff;
 
-$brand-primary: #13b2b1;
-$brand-secondary: #342766;
-$white: #ffffff;
+$grey-light      : #e7e7e7;
+$grey-medium     : #6D6E71;
+$grey-dark       : #222222;
 
-$grey-light: #e7e7e7;
-$grey-medium: #6D6E71;
-$grey-dark: #222222;
+$fw-light        : 300;
+$fw-normal       : 400;
+$fw-bold         : 700;
+$fw-black        : 900;
 
+$container-width : 600px;
 
-
-@function calculateRem($size) {
-    $remSize: $size / 16px;
-    @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-    font-size: $size;
-    font-size: calculateRem($size);
-}
-
-@mixin clearfix() {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-@mixin breakpoint($size) {
-  @media (min-width: $size) {
-    @content;
-  }
-}
-
-@mixin gradient($from, $to, $direction:null) {
-  $startPos: 0%;
-  $endPos: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#92278f+0,662d91+100 */
-  background: $from;
-  background: -moz-linear-gradient(top, $from $startPos, $to $endPos);
-  background: -webkit-linear-gradient(top, $from $startPos, $to $endPos);
-  background: linear-gradient(to bottom, $from $startPos, $to $endPos);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=0 );
-
-}
+$space           : 1em;
+$space-xs        : .25em;
+$space-s         : .5em;
+$space-l         : 2em;
+$space-xl        : 3em;

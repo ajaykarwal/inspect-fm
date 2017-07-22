@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="episode">
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+  <article>
+    {% include audio.html page=page %}
+    {{ content }}
+  </article>
+  <footer>
+    {% include share-page.html %}
+  </footer>
+</section>

@@ -2,7 +2,7 @@
 {% assign og_desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape %}
 {% assign og_type = 'website' %}
 {% assign og_url = page.url | replace:'index.html','' | absolute_url %}
-{% assign og_image = 'http://inspect.fm/images/inspectfm_artwork.png' %}
+{% assign og_image = 'http://inspect.fm/images/og_card.png' %}
 {% if page.date %}
   {% assign og_date = page.date | date_to_xmlschema %}
 {% endif %}
