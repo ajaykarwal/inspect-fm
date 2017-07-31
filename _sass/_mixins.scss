@@ -16,9 +16,16 @@
   }
 }
 
-@mixin breakpoint($size) {
-  @media (min-width: $size) {
-    @content;
+@mixin breakpoint($size, $dir: 'min') {
+  @if ($dir == 'max') {
+    @media (max-width: $size) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $size) {
+      @content;
+    }
   }
 }
 

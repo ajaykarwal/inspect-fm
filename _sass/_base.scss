@@ -16,7 +16,10 @@ body {
   font-weight: $fw-normal;
   font-size:100%;
   line-height: 1.6;
-  text-align: justify;
+  
+  @include breakpoint($break-sm) {
+    text-align: justify;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -35,6 +38,9 @@ a {
     color: $brand-secondary;
     text-decoration: underline;
   }
+}
+b, strong {
+  font-weight: $fw-bold;  
 }
 
 hr {
@@ -65,4 +71,10 @@ audio {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  @include breakpoint($break-xs, 'max') {
+    padding-left: $space;
+  }
 }
