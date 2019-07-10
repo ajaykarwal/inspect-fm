@@ -1,5 +1,6 @@
 html {
   box-sizing:border-box;
+  font-size:100%;
 }
 
 *,
@@ -10,24 +11,19 @@ html {
 
 body {
   margin: auto;
-  background-color: $white;
-  color: $grey-medium;
-  font-family: 'Lato', sans-serif;
+  background-color: $clay;
+  color: $grey-light;
+  font-family: $font-stack;
   font-weight: $fw-normal;
-  font-size:100%;
+  @include font-size(18px);
   line-height: 1.6;
-  
-  @include breakpoint($break-sm) {
-    text-align: justify;
-  }
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: $grey-dark;
+  color: $grey-light;
   font-weight: $fw-bold;
   margin-top:$space;
   margin-bottom: $space;
-  text-align: center;
 }
 
 a {
@@ -47,14 +43,14 @@ hr {
   height:1px;
   border:0;
   background-color: $grey-light;
-  margin:$space-l 0;
+  margin:$space-lg 0;
 }
 
 blockquote, .quote {
   margin: $space 0;
   padding: $space;
-  border-left: 0.5em solid $brand-primary;
-  background-color: $white;
+  border-left: 0.25em solid $brand-primary;
+  background-color: darken($clay, 5%);
   box-shadow: 6px 3px 16px 0px rgba(0,0,0,0.1);
   font-size: inherit;
   line-height: normal;

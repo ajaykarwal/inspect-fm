@@ -1,26 +1,31 @@
-//Breakpoints
-$break-xs        : 480px;
-$break-sm        : 768px;
-$break-md        : 992px;
-$break-lg        : 1200px;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
-$brand-primary   : #13b2b1;
-$brand-secondary : #342766;
-$white           : #ffffff;
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
 
-$grey-light      : #e7e7e7;
-$grey-medium     : #6D6E71;
-$grey-dark       : #222222;
+$brand-primary: #fbad14;
+$brand-secondary: #ffcf0f;
+$white: #ffffff;
 
-$fw-light        : 300;
-$fw-normal       : 400;
-$fw-bold         : 700;
-$fw-black        : 900;
+$grey-light: #e7e7e7;
+$grey-medium: #6d6e71;
+$grey-dark: #222222;
 
-$container-width : 600px;
+$clay: #232840;
 
-$space           : 1em;
-$space-xs        : .25em;
-$space-s         : .5em;
-$space-l         : 2em;
-$space-xl        : 3em;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-bold: 700;
+$fw-black: 900;
+
+$container-width: 1000px;
+
+$space: 1em;
+$space-xs: 0.25em;
+$space-sm: 0.5em;
+$space-lg: 2em;
+$space-xl: 3em;
+
+$font-stack : 'Lato', sans-serif;

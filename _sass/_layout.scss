@@ -5,16 +5,11 @@
 }
 
 section {
-  margin: $space-l 0;
-}
-
-header {
-  text-align: center;
+  margin: $space-lg 0;
 }
 
 main {
   @include clearfix;
-  background-color: $white;
 
   h1:first-of-type {
     margin-top:0;

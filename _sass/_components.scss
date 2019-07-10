@@ -17,18 +17,12 @@ ul.share-page {
 
 .date {
   @include font-size(12px);
-  font-style: normal;
-  font-weight: $fw-normal;
-  color: $grey-dark;
-  padding: 0;
-  margin: 0;
 }
 
 
 .subscribe-buttons {
-  background: lighten($grey-light, 5%);
-  border: 1px solid darken($grey-light, 5%);
-  padding: 0 $space;
+  background: darken($clay, 5%);
+  padding: $space-xs $space;
   margin: $space 0;
 
   ul {
@@ -44,7 +38,7 @@ ul.share-page {
         @include breakpoint($break-xs) {
           @include font-size(14px);
           display: inline-block;
-          color: $white;
+          color: $clay;
           text-align: center;
           padding:6px 12px;
           border-radius: 5px;
