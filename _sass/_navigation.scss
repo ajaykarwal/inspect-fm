@@ -1,29 +1,23 @@
 .site-nav {
-  clear: both;
-
-  @include breakpoint($break-xs) {
-    padding-top: $space-lg;
-  }
   &__toggle {
-    float: right;
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 30px;
     margin: 0;
-    margin-top: 4px;
     background: none;
     border: 0;
     padding: 0;
     border-radius: 0;
     height: 30px;
     width: 30px;
-    position: relative;
-    color: white;
+    color: $white;
     text-indent: -99em;
     overflow: hidden;
     &:hover {
       background: none;
     }
     &:after {
-      content: '=';
+      content: "=";
       text-indent: 0;
       width: 100%;
       height: 100%;
@@ -33,7 +27,7 @@
       font-size: 3em;
       line-height: 21px;
     }
-    
+
     @include breakpoint($break-xs) {
       float: none;
       display: none;
@@ -45,44 +39,10 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    transition: all 200ms ease;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    
-    &.visible {
-      padding-top: $space;
-      height: 230px;
-      opacity: 1;
-      visibility: visible;
-
-      li {
-        display: block;
-        @include breakpoint($break-xs) {
-          display: inline-block;
-        }
-      }
-    }
-
-    @include breakpoint($break-xs) {
-      display: block;
-      height: auto;
-      opacity: 1;
-      visibility: visible;
-
-      &.visible {
-        height: auto;
-      }
-    }
 
     li {
-      display: none;
-      margin: $space 0;
-      
-      @include breakpoint($break-xs) {
-        display: inline-block;
-        margin: 0 $space;
-      }
+      display: inline-block;
+      margin: 0 $space;
 
       a {
         color: $white;

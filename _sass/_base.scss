@@ -11,11 +11,11 @@ html {
 
 body {
   margin: auto;
-  background-color: $clay;
+  background-color: $grey-dark;
   color: $grey-light;
   font-family: $font-stack;
   font-weight: $fw-normal;
-  @include font-size(18px);
+  @include font-size(17px);
   line-height: 1.6;
 }
 
@@ -25,13 +25,16 @@ h1,h2,h3,h4,h5,h6 {
   margin-top:$space;
   margin-bottom: $space;
 }
+h1 {
+  text-transform: uppercase;
 
+}
 a {
   color: $brand-primary;
   text-decoration: none;
 
   &:hover {
-    color: $brand-secondary;
+    color: $white;
     text-decoration: underline;
   }
 }
@@ -40,9 +43,11 @@ b, strong {
 }
 
 hr {
-  height:1px;
   border:0;
-  background-color: $grey-light;
+  height: 2px;
+  width: 100%;
+  @include gradient($brand-primary, $grey-dark, "to bottom right");
+
   margin:$space-lg 0;
 }
 
@@ -50,7 +55,7 @@ blockquote, .quote {
   margin: $space 0;
   padding: $space;
   border-left: 0.25em solid $brand-primary;
-  background-color: darken($clay, 5%);
+  background-color: darken($grey-dark, 5%);
   box-shadow: 6px 3px 16px 0px rgba(0,0,0,0.1);
   font-size: inherit;
   line-height: normal;
@@ -72,5 +77,9 @@ img {
 ul {
   @include breakpoint($break-xs, 'max') {
     padding-left: $space;
+  }
+
+  li {
+    margin-bottom: $space;
   }
 }

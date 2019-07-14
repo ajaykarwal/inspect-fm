@@ -4,12 +4,15 @@
   margin:auto;
 }
 
-section {
-  margin: $space-lg 0;
+.wrapper {
+  display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    max-width: 1200px;
 }
 
 main {
-  @include clearfix;
 
   h1:first-of-type {
     margin-top:0;

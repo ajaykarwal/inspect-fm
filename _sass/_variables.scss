@@ -5,15 +5,15 @@ $break-sm: 768px;
 $break-md: 992px;
 $break-lg: 1200px;
 
-$brand-primary: #fbad14;
-$brand-secondary: #ffcf0f;
+$brand-primary: #ff9d00;
+$brand-secondary: #092b4a;
+$brand-tertiary: darken($brand-secondary, 10%);
 $white: #ffffff;
+$black: #1a1a1a;
 
 $grey-light: #e7e7e7;
 $grey-medium: #6d6e71;
 $grey-dark: #222222;
-
-$clay: #232840;
 
 $fw-light: 300;
 $fw-normal: 400;
@@ -25,6 +25,7 @@ $container-width: 1000px;
 $space: 1em;
 $space-xs: 0.25em;
 $space-sm: 0.5em;
+$space-md: 1.5em;
 $space-lg: 2em;
 $space-xl: 3em;
 

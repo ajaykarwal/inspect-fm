@@ -1,46 +1,51 @@
-.site-header {
+.header {
+  // @include gradient($brand-secondary, $brand-tertiary, "to bottom right");
+  background-image: radial-gradient(
+    circle at 40%,
+    $brand-secondary,
+    $brand-tertiary
+    );
   color: $white;
   text-align: center;
-  padding: $space 0;
-
-  @include breakpoint($break-xs) {
-    padding: $space-lg 0;
-  }
-}
-
-.logo {
-  margin: 0;
-  padding: 0;
-  color: $white;
-  float:left;
-
-  a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    line-height: 1;
-  }
-
-  &__icon {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 1;
-
-
-    svg {
-      fill: $white;
-      width: 30px;
+  padding: $space-xl 0;
+  // min-height: 40vh;
+  margin-bottom: $space-lg;
+  
+  .logo {
+    margin: 0;
+    padding: 0;
+    color: $white;
+  
+    a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      line-height: 1;
+    }
+  
+    &__icon {
       display: inline-block;
-      
-
+  
+      svg {
+        fill: $white;
+        width: 50px;
+        display: block;
+      }
+    }
+    &__text {
+      display: block;
+      line-height: normal;
+      margin-left: 2px;
+      font-weight: $fw-bold;
+      @include font-size(34px);
+      text-transform: uppercase;
     }
   }
-  &__text {
-    display: inline-block;
-    vertical-align: top;
-    line-height: normal;
-    margin-left: 2px;
-    font-weight: $fw-bold;
-    @include font-size(24px);
+  .subheading {
+    color: $brand-primary;
+    span {
+      color: $white;
+    }
   }
 }
+

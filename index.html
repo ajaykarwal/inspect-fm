@@ -1,27 +1,37 @@
 ---
 layout: home
 ---
+
 <section class="homepage">
   <header>
-    <h1>Latest Episode</h1>
-    <p class="subheading">[<a href="/episodes/">All Episodes</a>]</p>
+    <h1>Recent Episodes</h1>
   </header>
 
-  {% assign post = site.posts.first %}
-  <article class="cf">
-    <header>
-      <h2>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h2>
-      <p class="date">
-        <time datetime="{{ page.date }}" itemprop="datePublished">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </time>
-      </p>
-    </header>
-    {% include audio.html page=post %}
-    {{ post.content }}
-  </article>
+  <div class="episode-list">
+    {% for post in site.posts limit:4 %}
+    <article class="episode-list__item">
+      <hr />
+      <header>
+        <div class="episode-number">
+          {{ post.number }}
+        </div>
+        <h2>
+          <a href="{{ post.url | relative_url }}" title="Episode {{ post.number }} - {{ post.title }}">
+            {{ post.title | escape }}
+          </a>
+        </h2>
+        <p class="date">
+          <time datetime="{{ page.date }}" itemprop="datePublished">
+            {{ post.date | date_to_long_string }}
+          </time>
+        </p>
+      </header>
+      <p>{{ post.short_description }}</p>
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="text-center">
+    <a class="btn btn--large" href="/episodes/">View All Episodes</a>
+  </div>
 </section>

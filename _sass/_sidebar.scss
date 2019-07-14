@@ -1,36 +1,38 @@
 .sidebar {
-  a {
-    @include font-size(14px);
-  }
+  background-color: $black;
+  padding: $space-lg;
 
-  h2 {
-    margin: 0 0 $space 0;
-  }
   p {
-    margin-top: 0;
+    margin: 0;
   }
 
-  &__block {
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-gap:$space;
-  }
-  &__block-image {
-    img {   
-    width:60px;
-    border-radius:50%;
+  &__item {
+    margin-bottom: $space-lg;
+
+    &--heading {
+      margin: 0 0 $space-sm 0;
+      padding-bottom: $space-sm;
+      border-bottom: 1px solid $grey-medium;
+    }
+    &--list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        margin-bottom: $space-md;
+      }
     }
   }
-  &__block-text {
 
-  }
-  &__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
+  .subscribe-links {
     li {
-      margin-bottom: $space;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: $space;
+      }
     }
   }
 }
