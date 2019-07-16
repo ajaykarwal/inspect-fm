@@ -1,10 +1,10 @@
 ###### Site settings
 title            : Inspect
-metatitle        : Web Development and Tech Podcast
-description      : Inspect is a show about the world of web development, design and technology hosted by Ajay Karwal - a designer and front-end developer, pixel perfectionist, Apple enthusiast and all round technophile - with some occasional guests.
-tagline          : A podcast about web development, design, technology and some other random stuff.
+metatitle        : A Podcast about Design + Development
+description      : Inspect is a show about the world of web development, design and technology hosted by Ajay Karwal] — a designer and front-end developer from Buckingham, and Kay Mankoo] — a full stack developer from London.
+tagline          : A Podcast about Design + Development
 email            : inspectfm@gmail.com
-base_url         : http://inspect.fm
+base_url         : https://inspect.fm
 encoding         : utf-8
 
 google_analytics : UA-93339523-1
@@ -21,14 +21,15 @@ twitter:
 # Feeds and iTunes
 feeds:
   itunes         : https://itunes.apple.com/gb/podcast/inspect/id1213377482
-  pocket_casts   : http://pca.st/pmyU
+  pocket_casts   : https://pca.st/pmyU
   overcast       : https://overcast.fm/itunes1213377482/inspect
-  stitcher       : http://www.stitcher.com/s?fid=133154&refid=stpr
-  soundcloud     : http://soundcloud.com/inspectfm
+  stitcher       : https://www.stitcher.com/podcast/inspect
+  castro         : https://castro.fm/podcast/6b146eb3-3415-4d66-8b6c-f22a908bd8d2
+  soundcloud     : https://soundcloud.com/inspectfm
   rss            : /feed.xml
 
 feed_artwork     : /images/feed_artwork.jpg
-audio_host       : http://dts.podtrac.com/redirect.mp3/s3.eu-west-2.amazonaws.com/inspectfm/episodes/
+audio_host       : https://dts.podtrac.com/redirect.mp3/s3.eu-west-2.amazonaws.com/inspectfm/episodes/
 
 gems:
   - jekyll-sitemap
