@@ -29,13 +29,13 @@
   }
 }
 
-@mixin gradient($from, $to, $direction:null) {
+@mixin gradient($from, $to, $direction:"to bottom") {
   $startPos: 0%;
   $endPos: 100%;
   background: $from;
-  background: -moz-linear-gradient(top, $from $startPos, $to $endPos);
-  background: -webkit-linear-gradient(top, $from $startPos, $to $endPos);
-  background: linear-gradient(to bottom, $from $startPos, $to $endPos);
+  // background: -moz-linear-gradient($direction, $from $startPos, $to $endPos);
+  // background: -webkit-linear-gradient($direction, $from $startPos, $to $endPos);
+  background: linear-gradient(#{$direction}, $from $startPos, $to $endPos);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=0 );
 
 }

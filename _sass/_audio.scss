@@ -1,18 +1,7 @@
 .audio {
-  margin-top: $space-l;
-  display: grid;
-  grid-gap: $space-s;
-  grid-template-columns: 1fr;
-  grid-template-areas: "a a" "p p" "d d";
-  
-  @include breakpoint($break-xs) {
-    grid-gap: $space;
-    grid-template-columns: 140px 1fr;
-    grid-template-areas: "a d" "a d" "p p";
-  }
+  margin-top: $space-lg;
 
   &__artwork {
-    grid-area: a;
     
     text-align: center;
     max-width:60px;
@@ -24,13 +13,12 @@
     }
   }
   &__description {
-    grid-area: d;
     
     p {
       margin-top: 0;
     }
   }
   &__player {
-    grid-area: p;
+    margin: $space-xl 0;
   }
 }

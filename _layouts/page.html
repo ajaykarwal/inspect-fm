@@ -5,9 +5,7 @@ layout: default
 <section class="page{%if page.centered%} text-center{%endif%}">
   <header>
     <h1>{{ page.title | escape }}</h1>
+    <hr />
   </header>
   <article>{{ content }}</article>
-  <footer>
-    {% include share-page.html %}
-  </footer>
 </section>

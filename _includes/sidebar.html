@@ -1,44 +1,48 @@
-<div class="sidebar grid">
-  <div class="grid__column">
-    <h2>About the Host</h2>
-    <div class="sidebar__block">
-      <div class="sidebar__block-image">
-        <img src="/images/ajay-tea.jpg" alt="Photo of Ajay Karwal">
-      </div>
-      <div class="sidebar__block-text">
-        <p>Inspect is a podcast about web development, design, technology &amp; some other random stuff hosted by <a href="http://ajaykarwal.com">Ajay Karwal</a></p>
-      </div>
-    </div>
+<div class="sidebar">
+  <div class="sidebar__item">
+    <h3 class="sidebar__item--heading">Subscribe</h3>
+    <ul class="sidebar__item--list subscribe-links">
+      <li>
+        <img src="/images/apple-podcasts.svg" alt="Subscribe on Apple Podcasts" />
+        <a target="_blank" href="{{ site.feeds.itunes }}"> Apple Podcasts</a>
+      </li>
+      <li>
+        <img src="/images/pocketcasts.svg" alt="Subscribe on Pocket Casts" />
+        <a target="_blank" href="{{ site.feeds.pocket_casts }}"> Pocket Casts</a>
+      </li>
+      <li>
+        <img src="/images/overcast.svg" alt="Subscribe on Overcast" />
+        <a target="_blank" href="{{ site.feeds.overcast }}"> Overcast</a>
+      </li>
+      <li>
+        <img src="/images/stitcher.svg" alt="Subscribe on Stitcher" />
+        <a target="_blank" href="{{ site.feeds.stitcher }}"> Stitcher</a>
+      </li>
+      <li>
+        <img src="/images/rss.svg" alt="Subscribe via RSS" />
+        <a target="_blank" href="{{ site.feeds.rss }}"> RSS</a>
+      </li>
+    </ul>
   </div>
-  
-  <div class="grid__column">
-    <h2>Join the Inspect Slack team</h2>
-    <div class="sidebar__block">
-      <div class="sidebar__block-image">
-        <img src="/images/slack.png" alt="Slack logo">
-      </div>
-      <div class="sidebar__block-text">
-        <p>Discuss episodes, share idea and meet fellow Inspect subscribers in the Slack team.</p>
-        <p><a class="btn" href="/slack">Get an invite</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid__column">
-    <h2>Follow</h2>
-    <div class="sidebar__block">
-      <ul class="sidebar__list">
-        <li>
-          <a href="https://twitter.com/inspectfm" class="twitter-follow-button" data-show-count="false">
-            Follow @inspectfm
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/ajaykarwal" class="twitter-follow-button" data-show-count="false">
-            Follow @ajaykarwal
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="sidebar__item">
+    <h3 class="sidebar__item--heading">Hosted by</h3>
+    <ul class="sidebar__item--list">
+      <li>
+        <p>
+          Ajay Karwal
+        </p>
+        <a href="https://twitter.com/ajaykarwal">
+          Follow @ajaykarwal
+        </a>
+      </li>
+      <li>
+        <p>
+          Kay Mankoo
+        </p>
+        <a href="https://twitter.com/weared3lve">
+          Follow @weared3lve
+        </a>
+      </li>
+    </ul>
   </div>
 </div>

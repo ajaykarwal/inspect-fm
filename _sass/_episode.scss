@@ -1,4 +1,28 @@
-.episode {
+.episode-list {
+  &__item {
+    // @include gradient($brand-secondary, $brand-tertiary, "to bottom right");
+    // border-radius: 10px;
+    // padding: 30px;
+    margin-bottom: $space-xl;
 
+    &:last-of-type {
+      hr {
+        display: none;
+      }
+    }
 
+    h2 {
+      text-transform: none;
+      margin: 0;
+    }
+    .episode-number {
+      @include font-size(40px);
+      font-weight: $fw-black;
+    }
+    .date {
+      @include font-size(14px);
+      font-weight: $fw-light;
+      margin: 0;
+    }
+  }
 }

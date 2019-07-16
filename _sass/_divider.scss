@@ -1,8 +1,6 @@
-.dot-divider {
-  display: block;
-  text-align: center;
-  margin: $space-l auto;
-  color: $grey-medium;
-  @include font-size(30px);
-  line-height: 0;
+.divider {
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  @include gradient($brand-primary, $grey-dark, "to bottom right");
 }

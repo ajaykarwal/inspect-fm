@@ -1,41 +1,19 @@
 <div class="audio">
-  <div class="audio__artwork">
-    {% if page.url == "/episodes/" %}
-    <a href="{{ include.page.url | relative_url }}">
-    {%endif%}
-
-    {% if include.page.artwork %}
-    <img src="/images/episodes/{{include.page.artwork}}.jpg" alt="{{include.page.title}}">
-    {%else%}
-    <img src="/images/episodes/default.png" alt="{{include.page.title}}">
-    {% endif%}
-
-    {% if page.url == "/episodes/" %}
-    </a>
-    {%endif%}
-  </div>
   <div class="audio__description">
-    <p>{{include.page.short_description}}</p>
+    <p>{{ include.page.short_description }}</p>
     {% if page.url == "/episodes/" %}
     <a class="btn" href="{{ include.page.url | relative_url }}">Listen to the show</a>
     {%endif%}
   </div>
-  {% if page.url != "/episodes/" %}
   {% if page.url != "/feed.xml" %}
   <div class="audio__player">
-    <audio type="audio/mp3" src="{{site.audio_host}}{{include.page.filename}}.mp3" id="player" controls preload="none"></audio>
+    <audio
+      type="audio/mp3"
+      src="{{ site.audio_host }}{{ include.page.filename }}.mp3"
+      id="player"
+      controls
+      preload="none"
+    ></audio>
   </div>
   {%endif%}
-  {%endif%}
-
 </div>
-<p class="mt2 mb2 text-center">
-  <b>Have a question?</b>
-  <br>
-  Discuss this episode in the Slack community. <a class="typeform-share" href="https://inspectfm.typeform.com/to/DDL6UJ" data-mode="popup" data-hide-headers="true" data-hide-footer="true" target="_blank">Get an invite</a>
-</p>
-{% if page.url != "/episodes/" %}
-{% if page.url != "/feed.xml" %}
-{% include subscribe-buttons.html %}
-{%endif%}
-{%endif%}

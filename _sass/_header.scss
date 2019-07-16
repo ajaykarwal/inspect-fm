@@ -1,156 +1,51 @@
-.site-header {
-  @include gradient($brand-primary, $brand-secondary);
+.header {
+  // @include gradient($brand-secondary, $brand-tertiary, "to bottom right");
+  background-image: radial-gradient(
+    circle at 40%,
+    $brand-secondary,
+    $brand-tertiary
+    );
   color: $white;
   text-align: center;
-  padding: $space 0;
-
-  @include breakpoint($break-xs) {
-    padding: $space-l 0;
-  }
-}
-
-.logo {
-  margin: 0;
-  padding: 0;
-  color: $white;
-  float:left;
-  @include breakpoint($break-xs) {
-    float:none;
-  }
-
-  a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    line-height: 1;
-  }
-
-  &__icon {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 1;
-
-    @include breakpoint($break-xs) {
+  padding: $space-xl 0;
+  // min-height: 40vh;
+  margin-bottom: $space-lg;
+  
+  .logo {
+    margin: 0;
+    padding: 0;
+    color: $white;
+  
+    a {
       display: block;
+      color: inherit;
+      text-decoration: none;
+      line-height: 1;
     }
-
-    svg {
-      fill: $white;
-      width: 30px;
+  
+    &__icon {
       display: inline-block;
-      
-      @include breakpoint($break-xs) {
+  
+      svg {
+        fill: $white;
         width: 50px;
-      }
-    }
-  }
-  &__text {
-    display: inline-block;
-    vertical-align: top;
-    line-height: normal;
-    margin-left: 2px;
-    font-weight: $fw-bold;
-    @include font-size(24px);
-
-    @include breakpoint($break-xs) {
-      display: block;
-      margin-top: -$space-xs;
-      @include font-size(40px);
-    }
-  }
-}
-
-.site-nav {
-  clear: both;
-
-  @include breakpoint($break-xs) {
-    padding-top: $space-l;
-  }
-  &__toggle {
-    float: right;
-    display: inline-block;
-    margin: 0;
-    margin-top: 4px;
-    background: none;
-    border: 0;
-    padding: 0;
-    border-radius: 0;
-    height: 30px;
-    width: 30px;
-    position: relative;
-    color: white;
-    text-indent: -99em;
-    overflow: hidden;
-    &:hover {
-      background: none;
-    }
-    &:after {
-      content: '=';
-      text-indent: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-size: 3em;
-      line-height: 21px;
-    }
-    
-    @include breakpoint($break-xs) {
-      float: none;
-      display: none;
-      margin-top: 0;
-    }
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    transition: all 200ms ease;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    
-    &.visible {
-      padding-top: $space;
-      height: 230px;
-      opacity: 1;
-      visibility: visible;
-
-      li {
         display: block;
-        @include breakpoint($break-xs) {
-          display: inline-block;
-        }
       }
     }
-
-    @include breakpoint($break-xs) {
+    &__text {
       display: block;
-      height: auto;
-      opacity: 1;
-      visibility: visible;
-
-      &.visible {
-        height: auto;
-      }
+      line-height: normal;
+      margin-left: 2px;
+      font-weight: $fw-bold;
+      @include font-size(34px);
+      text-transform: uppercase;
     }
-
-    li {
-      display: none;
-      margin: $space 0;
-      @include font-size(13px);
-      
-      @include breakpoint($break-xs) {
-        display: inline-block;
-        margin: 0 $space;
-        @include font-size(14px);
-      }
-
-      a {
-        color: $white;
-      }
+  }
+  .subheading {
+    color: $brand-primary;
+    span {
+      color: $white;
     }
   }
 }
+

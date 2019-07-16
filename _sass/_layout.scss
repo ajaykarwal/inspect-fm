@@ -1,22 +1,28 @@
 .container {
-  max-width:$container-width;
-  padding:0 $space;
-  margin:auto;
+  max-width: $container-width;
+  padding: 0 $space;
+  margin: auto;
 }
 
-section {
-  margin: $space-l 0;
-}
+.wrapper {
+  margin: auto;
 
-header {
-  text-align: center;
-}
+  @include breakpoint($break-md) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
-main {
-  @include clearfix;
-  background-color: $white;
-
-  h1:first-of-type {
-    margin-top:0;
+    grid-gap: 30px;
+    max-width: 1200px;
   }
+}
+main {
+  padding: 0 $space-lg $space-xl $space-lg;
+
+  @include breakpoint($break-lg) {
+    padding: 0 0 $space-xl 0;
+  }
+}
+
+h1:first-of-type {
+  margin-top: 0;
 }

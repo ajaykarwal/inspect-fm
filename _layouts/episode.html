@@ -5,12 +5,11 @@ layout: default
 <section class="episode">
   <header>
     <h1>{{ page.title | escape }}</h1>
+    <hr />
   </header>
   <article>
     {% include audio.html page=page %}
     {{ content }}
+    {% include episode-footer.html %}
   </article>
-  <footer>
-    {% include share-page.html %}
-  </footer>
 </section>
