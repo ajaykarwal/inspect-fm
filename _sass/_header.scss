@@ -1,16 +1,18 @@
 .header {
   // @include gradient($brand-secondary, $brand-tertiary, "to bottom right");
-  background-image: radial-gradient(
-    circle at 40%,
-    $brand-secondary,
-    $brand-tertiary
-    );
+  // background-image: radial-gradient(
+  //   circle at 40%,
+  //   $brand-secondary,
+  //   $brand-tertiary
+  //   );
+  background: $grey-dark;
   color: $white;
-  text-align: center;
   padding: $space-xl 0;
-  // min-height: 40vh;
   margin-bottom: $space-lg;
   
+  .wrapper {
+align-items: center;
+  }
   .logo {
     margin: 0;
     padding: 0;
@@ -45,6 +47,16 @@
     color: $brand-primary;
     span {
       color: $white;
+    }
+  }
+  .show-artwork {
+    text-align: center;
+    
+    img {
+      display: inline-block;
+      margin: auto;
+      width: 300px;
+      border-radius: 10px;
     }
   }
 }
