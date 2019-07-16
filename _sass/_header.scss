@@ -7,8 +7,14 @@
   //   );
   background: $grey-dark;
   color: $white;
-  padding: $space-xl 0;
   margin-bottom: $space-lg;
+  padding: $space-xl $space;
+  text-align: center;
+  
+  @include breakpoint($break-md) {
+    padding: $space-xl $space-lg;
+    text-align: left;
+  }
   
   .wrapper {
 align-items: center;
@@ -27,6 +33,9 @@ align-items: center;
   
     &__icon {
       display: inline-block;
+      @include breakpoint($break-md) {
+        display: none;
+      }
   
       svg {
         fill: $white;
@@ -50,7 +59,11 @@ align-items: center;
     }
   }
   .show-artwork {
+    display: none;
     text-align: center;
+    @include breakpoint($break-md) {
+display: block;
+    }
     
     img {
       display: inline-block;
