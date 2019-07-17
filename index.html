@@ -10,7 +10,6 @@ layout: home
   <div class="episode-list">
     {% for post in site.posts limit:4 %}
     <article class="episode-list__item">
-      <hr />
       <header>
         <div class="episode-number">
           {{ post.number }}
@@ -27,6 +26,7 @@ layout: home
         </p>
       </header>
       <p>{{ post.short_description }}</p>
+      <hr />
     </article>
     {% endfor %}
   </div>
