@@ -1,9 +1,11 @@
 .site-footer {
   padding:$space-lg;
   background: $grey-very-dark;
+  color: $white;
   @include font-size(14px);
-
-  hr {
-    background-color: darken($grey-light, 5%);
+  
+  a {
+    
+    color: $brand-tertiary;
   }
 }

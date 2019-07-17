@@ -5,15 +5,16 @@ $break-sm: 768px;
 $break-md: 992px;
 $break-lg: 1200px;
 
-$brand-primary: #ff9d00;
-$brand-secondary: #07549A;
-$brand-tertiary: #042541;
+$brand-primary: #07549A;
+$brand-secondary: #042541;
+$brand-tertiary: #ff9d00;
 $white: #ffffff;
 $black: #000000;
 
-$grey-light: #e7e7e7;
-$grey-medium: #383838;
-$grey-dark: #222222;
+$grey-very-light: #f7f7f7;
+$grey-light: #eeeeee;
+$grey-medium: #757575;
+$grey-dark: #333333;
 $grey-very-dark: #1a1a1a;
 
 $fw-light: 300;
@@ -31,3 +32,5 @@ $space-lg: 2em;
 $space-xl: 3em;
 
 $font-stack : 'Lato', sans-serif;
+
+$radius : 10px;

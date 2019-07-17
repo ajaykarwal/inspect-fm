@@ -1,76 +1,88 @@
 .header {
   // @include gradient($brand-secondary, $brand-tertiary, "to bottom right");
-  // background-image: radial-gradient(
-  //   circle at 40%,
-  //   $brand-secondary,
-  //   $brand-tertiary
-  //   );
-  background: $grey-dark;
-  color: $white;
+  background-image: radial-gradient(circle at 40%, $brand-primary, $brand-secondary);
   margin-bottom: $space-lg;
   padding: $space-xl $space;
   text-align: center;
-  
+
   @include breakpoint($break-md) {
+    background: $grey-very-light;
     padding: $space-xl $space-lg;
     text-align: left;
   }
-  
+
   .wrapper {
-align-items: center;
+    align-items: center;
   }
   .logo {
     margin: 0;
     padding: 0;
-    color: $white;
-  
+
     a {
       display: block;
       color: inherit;
       text-decoration: none;
       line-height: 1;
     }
-  
+
     &__icon {
       display: inline-block;
       @include breakpoint($break-md) {
         display: none;
       }
-  
       svg {
         fill: $white;
         width: 50px;
         display: block;
+        @include breakpoint($break-md) {
+          width: 80px;
+        }
       }
     }
     &__text {
       display: block;
       line-height: normal;
       margin-left: 2px;
-      font-weight: $fw-bold;
       @include font-size(34px);
+      font-weight: $fw-bold;
       text-transform: uppercase;
+      color: $white;
+
+      @include breakpoint($break-md) {
+        @include font-size(44px);
+        color: $brand-primary;
+      }
     }
   }
   .subheading {
-    color: $brand-primary;
+    color: $brand-tertiary;
+    @include font-size(20px);
+    margin-top: $space-sm;
     span {
       color: $white;
+    }
+    
+    @include breakpoint($break-md) {
+      @include font-size(24px);
+      color: $grey-medium;
+      margin-top: 0;
+      span {
+        color: $brand-primary;
+      }
     }
   }
   .show-artwork {
     display: none;
     text-align: center;
     @include breakpoint($break-md) {
-display: block;
+      display: block;
     }
-    
+
     img {
       display: inline-block;
       margin: auto;
       width: 300px;
-      border-radius: 10px;
+      border-radius: $radius;
     }
   }
 }
-

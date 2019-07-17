@@ -42,14 +42,16 @@
 
     li {
       display: inline-block;
-      margin: 0 $space ;
+      margin: 0 $space;
+
       @include breakpoint($break-md) {
         margin: 0 $space-lg 0 0;
       }
       
-
       a {
-        color: $white;
+        @include breakpoint($break-md, "max") {
+            color: $white;
+          }
       }
     }
   }

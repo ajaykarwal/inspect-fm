@@ -11,8 +11,8 @@ html {
 
 body {
   margin: auto;
-  background-color: $grey-medium;
-  color: $white;
+  background-color: $white;
+  color: $grey-dark;
   font-family: $font-stack;
   font-weight: $fw-normal;
   @include font-size(17px);
@@ -20,7 +20,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: $white;
+  color: $brand-primary;
   font-weight: $fw-bold;
   margin-top:$space;
   margin-bottom: $space;
@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $white;
+    color: $brand-secondary;
     text-decoration: underline;
   }
 }
@@ -46,16 +46,15 @@ hr {
   border:0;
   height: 2px;
   width: 100%;
-  @include gradient($brand-primary, $grey-dark, "to bottom right");
-
-  margin:$space-lg 0;
+  margin: $space-lg 0;
+  background-color: $brand-tertiary;
 }
 
 blockquote, .quote {
   margin: $space 0;
   padding: $space;
   border-left: 0.25em solid $brand-primary;
-  background-color: darken($grey-dark, 5%);
+  background-color: $grey-light;
   box-shadow: 6px 3px 16px 0px rgba(0,0,0,0.1);
   font-size: inherit;
   line-height: normal;
