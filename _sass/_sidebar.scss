@@ -1,6 +1,10 @@
 .sidebar {
-  background-color: darken($grey-medium, 5%);
-  padding: $space-lg;
+  background-color: $grey-light;
+  padding: $space-md;
+
+  @include breakpoint($break-md) {
+    border-radius: $radius;
+  }
 
   p {
     margin: 0;
@@ -20,7 +24,16 @@
       margin: 0;
   
       li {
-        margin-bottom: $space-md;
+        border-radius: $radius;
+        margin-bottom: $space-sm;
+        padding: $space-sm;
+        &:hover {
+          background-color: darken($grey-light, 5%);
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -31,7 +44,8 @@
       align-items: center;
 
       img {
-        margin-right: $space;
+        margin-right: $space-sm;
+        vertical-align: middle;
       }
     }
   }

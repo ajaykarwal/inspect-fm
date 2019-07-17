@@ -9,10 +9,10 @@
 
   @include breakpoint($break-md) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 300px;
 
-    grid-gap: 30px;
-    max-width: 1200px;
+    grid-gap: $space-lg;
+    max-width: 1000px;
   }
 }
 main {
