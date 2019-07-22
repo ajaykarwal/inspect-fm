@@ -24,16 +24,7 @@
       margin: 0;
   
       li {
-        border-radius: $radius;
         margin-bottom: $space-sm;
-        padding: $space-sm;
-        &:hover {
-          background-color: darken($grey-light, 5%);
-        }
-
-        a:hover {
-          text-decoration: none;
-        }
       }
     }
   }
@@ -42,6 +33,18 @@
     li {
       display: flex;
       align-items: center;
+
+      a {
+        width: 100%;
+        padding: $space-sm;
+        border-radius: $radius;
+        display: block;
+        
+        &:hover {
+          background-color: darken($grey-light, 5%);
+          text-decoration: none;
+        }
+      }
 
       img {
         margin-right: $space-sm;
