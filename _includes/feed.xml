@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" 
   xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:webfeeds="http://webfeeds.org/rss/1.0"
   xmlns:wfw="http://wellformedweb.org/CommentAPI/" 
   xmlns:dc="http://purl.org/dc/elements/1.1/" 
   xmlns:atom="http://www.w3.org/2005/Atom" 
@@ -13,6 +14,14 @@
     <atom:link href="{{site.base_url}}/feed.xml" rel="self" type="application/rss+xml" />
     <link>{{site.base_url}}</link>
     <description>{{site.description}}</description>
+
+    <webfeeds:cover image="{{site.base_url}}{{ site.feed_artwork }}" />
+    <webfeeds:icon>{{site.base_url}}{{ site.feed_icon }}</webfeeds:icon>
+    <webfeeds:logo>{{site.base_url}}{{ site.feed_logo }}</webfeeds:logo>
+    <webfeeds:accentColor>07549A</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
+    <webfeeds:analytics id="{{ site.google_analytics }}" engine="GoogleAnalytics"/>
+    
     <image>
       <url>{{site.base_url}}{{ site.feed_artwork }}</url>
       <title>{{site.title}}</title>
@@ -47,7 +56,7 @@
       <link>{{site.base_url}}{{ episode.url }}</link>
       <title>{{ episode.number}}. {{ episode.title }}</title>
       <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
-      <description>{{'        <![CDATA['}}{% include audio.html page=episode %}{{ episode.content }}{{']]>'}}</description>
+      <description>{{'<![CDATA['}}{% include audio.html page=episode %}{{ episode.content }}{{']]>'}}</description>
       <image>
         <url>{{site.base_url}}{{ site.feed_artwork }}</url>
         <title>{{episode.title}}</title>
@@ -56,7 +65,8 @@
 
       <enclosure url="{{site.audio_host}}{{ episode.filename | xml_escape }}.mp3" length="{{ episode.length }}" type="audio/mp3" />
       <guid>{{ episode.filename | xml_escape }}</guid>
-
+      <!-- <itunes:season>{{ episode.season}}</itunes:season> -->
+      <itunes:episode>{{ episode.number}}</itunes:episode>
       <itunes:author>{{site.author.name}}</itunes:author>
       <itunes:summary>{{ episode.short_description | xml_escape }}</itunes:summary>
       <itunes:explicit>{{ episode.explicit }}</itunes:explicit>

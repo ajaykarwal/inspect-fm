@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Favicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M406,194 L374,194 L374,146 C374,141.581722 370.418278,138 366,138 L146,138 C141.581722,138 138,141.581722 138,146 L138,366 C138,370.418278 141.581722,374 146,374 L194,374 L194,406 L139.999999,406 C121.222318,406 106,390.777682 106,372.000001 L106,139.999999 C106,121.222318 121.222318,106 139.999999,106 L372.000001,106 C390.777682,106 406,121.222318 406,139.999999 L406,194 Z M332.777329,307.271339 L402.322782,377.761175 C408.574959,384.098253 408.574959,394.372685 402.322782,400.709763 L401.820169,401.220254 C395.567469,407.556809 385.430687,407.556809 379.178511,401.219731 L309.192976,330.283838 L272.792363,386.459313 C270.972148,389.268372 267.249887,390.049951 264.478462,388.205018 C263.335502,387.444151 262.483049,386.310604 262.062126,384.991903 L207.269823,213.334102 C206.249178,210.136542 207.979189,206.705775 211.13391,205.67127 L214.829993,205.67127 L384.188019,261.207617 C387.342741,262.242122 389.072751,265.672889 388.052106,268.870449 C387.631183,270.189151 386.77873,271.322698 385.63577,272.083565 L332.777329,307.271339 Z" id="path-1"></path>
+        <filter x="-7.0%" y="-6.0%" width="114.3%" height="114.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Favicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-8" fill="#07549A" fill-rule="nonzero" x="0" y="0" width="512" height="512"></rect>
+        <g id="Combined-Shape-Copy-2" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
