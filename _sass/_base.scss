@@ -20,10 +20,12 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: $brand-primary;
   font-weight: $fw-bold;
   margin-top:$space;
   margin-bottom: $space;
+}
+h5,h6 {
+  font-weight: $fw-normal;
 }
 h1 {
   text-transform: uppercase;

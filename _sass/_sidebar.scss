@@ -22,7 +22,7 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
-  
+
       li {
         margin-bottom: $space-sm;
       }
@@ -39,7 +39,7 @@
         padding: $space-sm;
         border-radius: $radius;
         display: block;
-        
+
         &:hover {
           background-color: darken($grey-light, 5%);
           text-decoration: none;
@@ -49,6 +49,62 @@
       img {
         margin-right: $space-sm;
         vertical-align: middle;
+      }
+    }
+  }
+  .hosts {
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: $space-sm;
+        border-radius: $radius;
+        // display: block;
+
+        &:hover {
+          background-color: darken($grey-light, 5%);
+          text-decoration: none;
+        }
+      }
+
+      .avatar {
+        margin-right: $space-sm;
+        border-radius: 6px;
+        width: 34px;
+        vertical-align: middle;
+      }
+      .name {
+        display: inline-block;
+        h4,
+        h5 {
+          margin: 0;
+        }
+        h4 {
+          color: $black;
+        }
+        h5 {
+          color: $grey-medium;
+        }
+      }
+    }
+  }
+  .community {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      width: 26px;
+      margin: $space-sm;
+
+      a {
+        width: 100%;
+        display: block;
+        color: $grey-dark;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }

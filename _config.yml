@@ -29,6 +29,8 @@ feeds:
   rss            : /feed.xml
 
 feed_artwork     : /images/feed_artwork.jpg
+feed_icon        : /images/feed_icon.svg
+feed_logo        : /images/feed_logo.svg
 # audio_host       : https://dts.podtrac.com/redirect.mp3/s3.eu-west-2.amazonaws.com/inspectfm/episodes/
 audio_host       : https://media.blubrry.com/inspect/inspectfm.s3.eu-west-2.amazonaws.com/episodes/
 

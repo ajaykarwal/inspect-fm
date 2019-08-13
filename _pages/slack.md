@@ -2,8 +2,8 @@
   layout: page
   title: Join the Inspect Slack team
   permalink: /slack/
-  centered: true
 ---
+
 <img src="/images/slack.png" alt="Slack logo" class="slack-logo">
 
 Come and be part of the Inspect Slack team and get early access to episodes and show notes, share ideas on future content, meet fellow Inspect subscribers, and be part of the community.
