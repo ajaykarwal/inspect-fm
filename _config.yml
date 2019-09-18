@@ -21,6 +21,7 @@ twitter:
 # Feeds and iTunes
 feeds:
   itunes         : https://itunes.apple.com/gb/podcast/inspect/id1213377482
+  google         : https://podcasts.google.com/?feed=aHR0cHM6Ly9pbnNwZWN0LmZtL2ZlZWQueG1s
   pocket_casts   : https://pca.st/pmyU
   overcast       : https://overcast.fm/itunes1213377482/inspect
   stitcher       : https://www.stitcher.com/podcast/inspect
