@@ -35,7 +35,7 @@ feed_logo        : /images/feed_logo.svg
 # audio_host       : https://dts.podtrac.com/redirect.mp3/s3.eu-west-2.amazonaws.com/inspectfm/episodes/
 audio_host       : https://media.blubrry.com/inspect/inspectfm.s3.eu-west-2.amazonaws.com/episodes/
 
-gems:
+plugins:
   - jekyll-sitemap
   - emoji_for_jekyll
   - jekyll-feed
@@ -48,6 +48,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor
 
 
 # Build settings
