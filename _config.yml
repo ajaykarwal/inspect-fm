@@ -27,6 +27,9 @@ feeds:
   stitcher       : https://www.stitcher.com/podcast/inspect
   castro         : https://castro.fm/podcast/6b146eb3-3415-4d66-8b6c-f22a908bd8d2
   soundcloud     : https://soundcloud.com/inspectfm
+  youtube        : https://www.youtube.com/channel/UCdOFzk8F8-yCyH26Msq2kSA
+  spotify        : https://open.spotify.com/show/0o5Q8dFP6MunHQEVKfvBgt?si=RbWyrw7QSYOr7-qJv3k7Xg
+  facebook       : https://fb.me/inspectfm
   rss            : /feed.xml
 
 feed_artwork     : /images/feed_artwork.jpg
