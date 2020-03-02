@@ -30,6 +30,7 @@ feeds:
   youtube        : https://www.youtube.com/channel/UCdOFzk8F8-yCyH26Msq2kSA
   spotify        : https://open.spotify.com/show/0o5Q8dFP6MunHQEVKfvBgt?si=RbWyrw7QSYOr7-qJv3k7Xg
   facebook       : https://fb.me/inspectfm
+  whatpods       : https://whatpods.com/podcasts/inspect/
   rss            : /feed.xml
 
 feed_artwork     : /images/feed_artwork.jpg
