@@ -7,6 +7,10 @@ permalink: /episodes/
 <div class="episode-list">
   
   {% for post in site.posts %}
+  {% capture postmodulo %}{{ forloop.index0 | modulo:8 }}{% endcapture %}
+  {% if postmodulo == '0' %}
+  {% include join-slack.html %}
+  {% endif %}
   <article class="episode-list__item">
     <header>
       <div class="episode-number">
@@ -14,7 +18,7 @@ permalink: /episodes/
       </div>
       <h2>
         <a href="{{ post.url | relative_url }}" title="Episode {{post.number}} - {{post.title}}">
-          {{ post.title | escape }}
+           {{ post.title | escape }}
         </a>
       </h2>
       <p class="date">

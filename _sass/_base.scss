@@ -1,6 +1,6 @@
 html {
-  box-sizing:border-box;
-  font-size:100%;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
 *,
@@ -19,17 +19,31 @@ body {
   line-height: 1.6;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $fw-bold;
-  margin-top:$space;
+  margin-top: $space;
   margin-bottom: $space;
 }
-h5,h6 {
+h5,
+h6 {
   font-weight: $fw-normal;
 }
 h1 {
   text-transform: uppercase;
-
+  > span {
+    display: inline-block;
+    margin-top: 10px;
+    @include font-size(17px);
+    text-transform: none;
+    @include breakpoint($break-xs) {
+      float: right;
+    }
+  }
 }
 a {
   color: $brand-primary;
@@ -40,24 +54,26 @@ a {
     text-decoration: underline;
   }
 }
-b, strong {
-  font-weight: $fw-bold;  
+b,
+strong {
+  font-weight: $fw-bold;
 }
 
 hr {
-  border:0;
+  border: 0;
   height: 2px;
   width: 100%;
   margin: $space-lg 0;
   background-color: $brand-tertiary;
 }
 
-blockquote, .quote {
+blockquote,
+.quote {
   margin: $space 0;
   padding: $space;
   border-left: 0.25em solid $brand-primary;
   background-color: $grey-light;
-  box-shadow: 6px 3px 16px 0px rgba(0,0,0,0.1);
+  box-shadow: 6px 3px 16px 0px rgba(0, 0, 0, 0.1);
   font-size: inherit;
   line-height: normal;
 
@@ -67,7 +83,7 @@ blockquote, .quote {
 }
 
 audio {
-  width:100%;
+  width: 100%;
 }
 
 img {
@@ -76,7 +92,7 @@ img {
 }
 
 ul {
-  @include breakpoint($break-xs, 'max') {
+  @include breakpoint($break-xs, "max") {
     padding-left: $space;
   }
 

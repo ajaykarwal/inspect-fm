@@ -4,7 +4,7 @@ layout: home
 
 <section class="homepage">
   <header>
-    <h1>Recent Episodes</h1>
+    <h1>Recent Episodes <span><a href="/episodes/">View All Episodes</a></span></h1>
     <hr>
   </header>
 
@@ -31,7 +31,7 @@ layout: home
     </article>
     {% endfor %}
   </div>
-
+  {% include join-slack.html %}
   <div class="text-center">
     <a class="btn btn--large" href="/episodes/">View All Episodes</a>
   </div>

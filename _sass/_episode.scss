@@ -24,7 +24,7 @@
       top: -10px;
       right: 0;
       z-index: -1;
-      
+
       @include breakpoint($break-md) {
         @include font-size(80px);
         top: -25px;
@@ -34,6 +34,15 @@
       @include font-size(14px);
       font-weight: $fw-light;
       margin: 0;
+    }
+
+    &.slack {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      grid-gap: 20px;
+      @include gradient($grey-very-light, $grey-light, "to bottom right");
+      border-radius: $radius;
+      padding: 30px;
     }
   }
 }
