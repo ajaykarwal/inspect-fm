@@ -65,8 +65,10 @@
 
       <enclosure url="{{site.audio_host}}{{episode.filename | xml_escape}}.mp3" length="{{episode.length}}" type="audio/mp3" />
       <guid>{{episode.filename | xml_escape}}</guid>
-      <!-- <itunes:season>{{episode.season}}</itunes:season> -->
       <itunes:episode>{{episode.number}}</itunes:episode>
+      {% if episode.episodeType %}
+      <itunes:episodeType>{{episode.episodeType}}</itunes:episodeType>
+      {% endif %}
       <itunes:author>{{site.author.name}}</itunes:author>
       <itunes:summary>{{episode.short_description | xml_escape}}</itunes:summary>
       <itunes:explicit>{{episode.explicit}}</itunes:explicit>
