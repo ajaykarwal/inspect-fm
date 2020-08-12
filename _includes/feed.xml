@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:webfeeds="http://webfeeds.org/rss/1.0"
-  xmlns:wfw="http://wellformedweb.org/CommentAPI/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:slash="http://purl.org/rss/1.0/modules/slash/" 
-  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{{site.title}}</title>
@@ -21,7 +21,7 @@
     <webfeeds:accentColor>07549A</webfeeds:accentColor>
     <webfeeds:related layout="card" target="browser"/>
     <webfeeds:analytics id="{{site.google_analytics}}" engine="GoogleAnalytics"/>
-    
+
     <image>
       <url>{{site.base_url}}{{site.feed_artwork}}</url>
       <title>{{site.title}}</title>
@@ -63,7 +63,7 @@
         <link>{{site.base_url}}{{episode.url}}</link>
       </image>
 
-      <enclosure url="{{site.audio_host}}{{episode.filename | xml_escape}}.mp3" length="{{episode.length}}" type="audio/mp3" />
+      <enclosure url="{{site.audio_host}}{{episode.filename | xml_escape}}.mp3" length="{{episode.length}}" type="audio/mpeg" />
       <guid>{{episode.filename | xml_escape}}</guid>
       <itunes:episode>{{episode.number}}</itunes:episode>
       {% if episode.episodeType %}
