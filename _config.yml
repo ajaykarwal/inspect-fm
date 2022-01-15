@@ -4,7 +4,7 @@ metatitle        : A Podcast about Design + Development
 description      : Inspect is a show about the world of web development, design and technology hosted by Ajay Karwal — a designer and front-end developer from Buckingham, and Kay Mankoo — a full stack developer from London.
 tagline          : A Podcast about Design + Development
 email            : inspectfm@gmail.com
-base_url         : https://inspect.fm
+base_url         : https://inspectpodcast.com
 encoding         : utf-8
 
 google_analytics : UA-93339523-1
@@ -15,7 +15,7 @@ author:
 
 # Social accounts
 twitter:
-  inspect        : inspectfm
+  inspect        : inspectpodcast
   ajay           : ajaykarwal
 
 # Feeds and iTunes
